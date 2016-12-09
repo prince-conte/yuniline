@@ -1,0 +1,11 @@
+mixin index-container(data)
+
+    include ../news-block/news-block
+    include ../aside-sub-container/aside-sub-container
+
+    main.index-container
+        .content
+            +news-block()
+            +aside-sub-container()
+            
+            

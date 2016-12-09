@@ -1,0 +1,99 @@
+.news-block
+    display flex
+    flex-direction column
+    flex-basis 60%
+    max-width 65%
+    padding 20px 0
+    
+
+    &__anons-article
+        display flex
+        height 280px
+        flex-wrap wrap
+        margin 10px 0
+        
+        
+        &__image-box
+            flex-basis 33.33333%
+            max-width 33.33333%
+            padding-left 10px
+            padding-right 10px
+            overflow hidden
+            height inherit
+        
+            img
+                width 100%
+                max-width 100%
+                height auto
+            
+        &__content
+            display flex
+            box-sizing border-box
+            flex-basis 66.66667%
+            max-width 66.66667%
+            padding-left 10px
+            padding-right 10px
+            align-content center
+            flex-wrap wrap
+
+        
+        &_title
+            display inherit
+            font-size 26px
+            font-family fontb
+            line-height 30px
+            margin 10px 0
+            color coltxt
+            width 100%
+            text-transform uppercase
+        
+              
+        &_tag
+            display inherit
+            font-size 12px
+            line-height 12px
+            font-family fontblack
+            letter-spacing 2px
+            margin 10px 0
+            color coltxt
+            text-transform uppercase
+            color colfirm
+            width 100%
+             
+              
+        &_date
+            display inherit
+            font-size 10px
+            line-height 10px
+            margin 10px 0
+            color coltxt
+            text-transform uppercase
+            color #7b7b7b
+            width 100%
+         
+            
+    
+    
+    &__anons-article-big 
+        flex-wrap wrap
+        flex-flow column
+        height auto
+        max-height none
+        
+        .news-block__anons-article__image-box
+            width 100%
+            max-width 100%
+            flex-basis 100%
+            padding 20px 10px
+            height auto
+            max-height none
+            
+            
+        .news-block__anons-article__content
+            width 100%
+            max-width 100%
+            flex-basis 100%
+            padding 20px 10px
+        
+    
+    

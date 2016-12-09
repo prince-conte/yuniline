@@ -1,0 +1,88 @@
+.nav
+    height 60px
+    display block
+    background colbg
+    z-index 999
+    
+    &__topmenu
+        display flex
+        height inherit
+        flex-direction row
+        justify-content center
+        
+        
+        
+    &__topmenu__item
+        position relative
+        display flex
+        padding 0 35px
+        align-items center
+        height inherit
+        border-right  solid 1px #E6EAEA
+        order 1
+        cursor pointer
+        m-speed(.3s)
+        &:last-child
+            border-right  solid 0px
+        
+        a
+            display block
+            font-size 14px
+            color coltxt
+            font-family fontb
+            text-transform uppercase
+            
+            
+            
+            
+    &__sub-menu       
+        position absolute
+        top 100%
+        left 0px
+        display none
+        height inherit
+        flex-direction column
+        justify-content center
+        height auto
+        z-index 99
+        
+        li
+            display flex
+            background coltxt
+            height 60px
+            align-items center
+            border-top solid 1px #5a5a5a
+        
+        
+        a
+            display block
+            font-size 14px
+            color colbg
+            font-family fontb
+            text-transform uppercase
+            padding 0 35px
+            
+        li:hover
+            background #3a3939
+            a
+                color colbg
+            
+            
+            
+    &__topmenu__item:hover
+        background coltxt
+        a
+            color colbg
+            
+        .nav__sub-menu
+            display flex
+            
+            
+        
+            
+            
+                
+        
+        
+        
+    

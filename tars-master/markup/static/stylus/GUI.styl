@@ -1,0 +1,38 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+
+
+.button-block
+    display block
+    margin-top 20px
+
+.button
+    display inline-block
+    background colfirm + 10%
+    position relative
+    span
+        display inline-block
+        padding 18px 20px
+        color #fff
+        font-size 12px
+        text-transform uppercase
+        line-height 14px
+        z-index 9999
+        position relative
+        
+    
+    &:before
+        content ''
+        position absolute
+        display block
+        width 0px
+        height 100%
+        top 0px
+        left 0px
+        m-speed(.4s)
+        background colfirm + 5%
+    
+.button:hover
+    &:before
+        width 100%

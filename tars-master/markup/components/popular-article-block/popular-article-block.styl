@@ -1,0 +1,112 @@
+.popular-article-block
+    display flex
+    flex-direction column
+    flex-basis 100%
+    max-width 100%
+    margin 20px 0px
+    min-height 350px
+    
+    &__title
+        display block
+        text-align center
+        font-size 20px
+        color coltxt
+        padding 0 10px
+        margin-bottom 30px
+        position relative
+        text-transform uppercase
+        font-family fontb
+        
+        &:before
+            content '';
+            position absolute
+            display block
+            height 4px
+            width 50px
+            left 50%
+            bottom -10px
+            margin-left -25px
+            background colfirm
+            
+
+        
+    &__body 
+        display flex
+        width: 100%;
+        padding-bottom: 8px;
+        margin-bottom: 18px;
+        counter-reset: li;
+        padding: 0;
+        list-style: none;
+        margin-left: 18px;
+        flex-direction column
+    
+        &__anons  
+            position: relative;
+            display flex
+            max-width 100%
+            flex-basis 100%
+            min-height 80px
+            font-size: 15px;
+            margin : 12px 0;
+            padding-left 50px
+            border-bottom solid 1px #e6eaea
+            m-speed(.4s)
+            &:last-child
+                border-bottom solid 0px
+                &:hover
+                    border-bottom solid 0px
+                
+            &:hover
+                border-bottom solid 1px colfirm
+                
+
+            a
+                display inherit
+                justify-content space-between
+                flex-flow row
+            
+            &_titile-anons
+                font-size 13px
+                font-family fontb
+                max-width 70%
+                flex-basis 70%
+                display flex
+                line-height 20px
+                color coltxt
+                text-transform uppercase
+                m-speed(.4s)
+                
+    
+            
+            &_image-anons
+                max-width 70px
+                flex-basis 60px
+                max-height 60px
+                overflow hidden
+                display flex
+                img
+                    width 100%
+                    height auto
+                
+    
+
+    
+    .popular-article-block__body__anons:before 
+        content: counter(li);
+        content: counter(li) '. ';
+        counter-increment: li;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        padding: 4px 0;
+        text-align: center;
+        font-size: 40px;
+        font-weight 700
+        font-family fonttxt
+   
+            
+            
+    
+
+        
