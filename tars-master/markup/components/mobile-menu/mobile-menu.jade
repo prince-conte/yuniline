@@ -1,0 +1,201 @@
+mixin mobile-menu (data)
+
+
+    .mobile-menu#mobile_menu
+        .mobile-menu__body-menu
+            ul.mobile-menu__body-menu__ul
+        
+                li.mobile-menu__body-menu__item
+                    a.mobile-menu__body-menu__item_link(href="#") Издательство
+                    
+                                
+                    ul.mobile-menu__sub-menu      
+                    
+                        li.mobile-menu__sub-menu__item
+                            a История
+                                            
+                        li.mobile-menu__sub-menu__item
+                            a Представительства
+                                            
+                        li.mobile-menu__sub-menu__item
+                            a Вакансии
+                                            
+                        li.mobile-menu__sub-menu__item
+                            a Партнёры
+                         
+                
+                li.mobile-menu__body-menu__item
+                    a.mobile-menu__body-menu__item_link(href="#") Новости
+                    
+                                
+                    ul.mobile-menu__sub-menu      
+                    
+                        li.mobile-menu__sub-menu__item
+                            a Все новости
+                                            
+                        li.mobile-menu__sub-menu__item
+                            a События
+                                            
+                        li.mobile-menu__sub-menu__item
+                            a Конкурсы
+                                            
+                        li.mobile-menu__sub-menu__item
+                            a Акции
+                      
+                        
+                    
+                
+                li.mobile-menu__body-menu__item
+                    a.mobile-menu__body-menu__item_link(href="#") Сотрудничество
+                    
+                                
+                    ul.mobile-menu__sub-menu      
+                    
+                        li.mobile-menu__sub-menu__item
+                            a Авторам
+                  
+                        li.mobile-menu__sub-menu__item
+                            a Рекламодателям
+                                            
+                        li.mobile-menu__sub-menu__item
+                            a Распространителям
+                                            
+                        li.mobile-menu__sub-menu__item
+                            a Медиакиты
+
+
+                li.mobile-menu__body-menu__item
+                    a.mobile-menu__body-menu__item_link(href="#") Магазин
+                    
+                                
+                    ul.mobile-menu__sub-menu      
+                    
+                        li.mobile-menu__sub-menu__item
+                            a Подписка
+
+                  
+                        li.mobile-menu__sub-menu__item
+                            a Прошлые номера
+                                            
+                        li.mobile-menu__sub-menu__item
+                            a Сувенирная продукция
+                                            
+                        li.mobile-menu__sub-menu__item
+                            a Корзина
+                                            
+                        li.mobile-menu__sub-menu__item
+                            a Оплата и доставка
+
+                
+                li.mobile-menu__body-menu__item
+                    a.mobile-menu__body-menu__item_link(href="#") Конкурсы
+                    
+                                
+                    ul.mobile-menu__sub-menu      
+                    
+                        li.mobile-menu__sub-menu__item
+                            a Все конкурсы
+
+                        li.mobile-menu__sub-menu__item
+                            a Онлайн регистрация в конкурсах
+                                            
+                        li.mobile-menu__sub-menu__item
+                            a Правила участия в конкурсах
+
+   
+                li.mobile-menu__body-menu__item
+                    a.mobile-menu__body-menu__item_link(href="#") ВОЙТИ / ЗАРЕГИСТРИРОВАТЬСЯ
+                    
+                                
+                    .mobile-menu__sub-menu      
+                        form.mobile-menu__sub-menu__form
+                            label Войти
+                            input(placeholder="Логин или e-mail")
+                            input(placeholder="Пароль")
+                            .button-block
+                                a.button 
+                                    span Войти
+                            a.mobile-menu__sub-menu__form_link(href="#") Забыли пароль? Воспользуйтесь формой восстановления пароля...
+                            label Регистрация
+                            .button-block
+                                a.button 
+                                    span Перейти к регистрации
+                                
+                                    
+                           
+   
+                li.mobile-menu__body-menu__item
+                    a.mobile-menu__body-menu__item_link(href="#") Ваш регион
+                    
+                                
+                    .mobile-menu__sub-menu      
+                        form.mobile-menu__sub-menu__form
+                            label Выбрать регион
+                            input(placeholder="Смоленск")
+                            .button-block
+                                a.button 
+                                    span Перейти к регистрации
+                                
+                                    
+                            
+                    
+
+                
+                li.mobile-menu__body-menu__item
+                    a.mobile-menu__body-menu__item_link(href="#") Поиск по сайту
+                    
+                                
+                    .mobile-menu__sub-menu      
+                        form.mobile-menu__sub-menu__form
+                            label Поиск по сайту
+                            input(placeholder="Введите поисковую фразу")
+                            .button-block
+                                a.button 
+                                    span Поиск
+                                
+                            
+
+                li.mobile-menu__body-menu__item
+                    a.mobile-menu__body-menu__item_link(href="#") Задать вопрос
+                    
+                                
+                    .mobile-menu__sub-menu      
+                        form.mobile-menu__sub-menu__form
+                            label Задать вопрос
+                            input(placeholder="Ваше имя")
+                            input(placeholder="e-mail")
+                            input(placeholder="Номер телефона")
+                            textarea(placeholder="Текст сообщения")
+                            .button-block
+                                a.button 
+                                    span Поиск
+                             
+        
+                li.mobile-menu__body-menu__item
+                    a.mobile-menu__body-menu__item_link(href="#") Контакты
+                               
+                    .mobile-menu__sub-menu      
+                        form.mobile-menu__sub-menu__form
+                            label Контакты
+                            div#map
+                            
+                            .mobile-menu__sub-menu__form_contact-title Адрес:
+                            a.mobile-menu__sub-menu__form_contact-link 214004, г. Смоленск, ул. Ново-Киевская, д. 9А, офис 1
+                                                      
+                            .mobile-menu__sub-menu__form_contact-title Телефон:
+                            a.mobile-menu__sub-menu__form_contact-link(href="tel:+74812358777") 8(4812) 358-777
+                            .mobile-menu__sub-menu__form_contact-title e-mail:
+                            a.mobile-menu__sub-menu__form_contact-link(href="mailto:total@yuniline.ru") total@yuniline.ru
+                            
+                            .button-block
+                            
+                                a.button 
+                                    span Адреса представительств
+                                    
+        a.mobile-menu__close#closemenu_button
+            span
+
+                             
+                             
+                                     
+    

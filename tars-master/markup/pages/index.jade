@@ -7,6 +7,7 @@ html(class="no-js", lang="ru")
     include ../components/center-slider/center-slider
     include ../components/index-container/index-container
     include ../components/footer/footer
+    include ../components/mobile-menu/mobile-menu
     
     //include ../components/footer/footer 
 
@@ -24,6 +25,7 @@ html(class="no-js", lang="ru")
             +center-slider()
             +index-container()
             +footer()
+            +mobile-menu()
             
             //+header()
             
@@ -37,10 +39,11 @@ html(class="no-js", lang="ru")
         script svg4everybody();
 
         //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(type="text/javascript" src="https://maps.googleapis.com/maps/api/js")
         script(src='%=static=%js/main%=hash=%%=min=%.js')
-        
         script(src='%=static=%js/separate-js/index%=hash=%%=min=%.js')
         script(src='%=static=%js/separate-js/centerslider%=hash=%%=min=%.js')
         script(src='%=static=%js/separate-js/jquery.smoothscroll%=hash=%%=min=%.js'  defer)
+        
 
         

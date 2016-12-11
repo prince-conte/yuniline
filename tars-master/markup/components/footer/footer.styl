@@ -1,7 +1,7 @@
 .footer
     min-height 300px
     border-top solid 1px #E6EAEA
-    margin-top 20px
+    margin-top 50px
         
         
     
@@ -20,24 +20,36 @@
         min-height 250px
         max-height 300px
         flex-flow row
+        &:last-child
+            padding-left 55px
+            
+    .item-25per
+        max-width 25%
+        flex-basis 25%
+        &:last-child
+            padding-left 0px
         
-    &__subscribe
+    &__body
         display inherit
-        max-width 60%
-        flex-basis 60%
+        max-width 100%
+        flex-basis 100%
         padding-right 10px
         flex-flow column
         
-        &_title
-            font-size 18px
-            font-family fontb
-            text-align left
-            line-height 22px
+    .subscribe-magazine
+        max-width 60%
+        flex-basis 60%
+        
+    &_title
+        font-size 20px
+        font-family fontb
+        text-align left
+        line-height 22px
+        margin-bottom 20px
             
-        &_description
-            margin-top 20px
-            font-size 16px
-            line-height 20px
+    &_description
+        font-size 16px
+        line-height 20px
             
     &__magazine
         display block
@@ -47,6 +59,145 @@
         img
             width 100%
             height auto
+            
+            
+            
+            
+            
+    &__subscribe-news
+        flex-flow row
+        flex-wrap wrap
+        margin-top 20px
+
+        
+        &_input-email
+            padding 15px 20px 13px
+            font-size 16px
+            color coltxt
+            background #fff
+            outline none
+            display inline-block
+            height 50px
+            
+        &_send
+            display inline-block
+            margin 0px
+            text-align left
+            .button
+                outline none
+                margin-left -7px
+                top -2px
+                
+            input
+                visibility hidden
+                width 0px
+                height 0px
+                
+                
+                
+    &__contacts
+        height 40px
+        max-width 100%
+        flex-basis 100%
+        display flex
+        justify-content left
+        align-items center
+        position relative
+        
+        &_title
+            display inline-block
+            font-size 16px
+            margin-right 25px
+            
+
+        a
+            margin 0 7px
+            
+        &_link
+            display inline-block
+            margin 0
+            font-size 14px
+            color coltxt
+            font-family fontb
+            m-speed(.4s)
+            &:hover
+                color colfirm
+        
+            
+            
+        .vkontakte-ico
+            bg-svg($vkontakte); 
+            width 24px
+            height 24px
+                       
+        .facebook-ico
+            bg-svg($facebook); 
+            width 24px
+            height 24px
+            
+                                   
+        .odnoklassniki-ico
+            bg-svg($odnoklassniki); 
+            width 24px
+            height 24px
+            
+            
+            
+            
+    &__sub-menu
+        display flex
+        flex-flow column
+        max-width 100%
+        flex-basis 100%
+        
+        &_item
+            display block
+            width 100%
+            
+            a
+                display block
+                font-size 14px
+                line-height 14px
+                padding 8px 0
+                color coltxt
+                font-family fonttxt
+                m-speed(.4s)
+                &:hover
+                    color colfirm
+                    
+                    
+    &__copyright
+        display flex
+        width 100%
+        padding 20px 0
+        align-content flex-start
+        flex-wrap wrap
+        
+        p
+            font-size 14px
+            text-align left
+            display block
+            max-width 100%
+            flex-basis 100%
+            text-transform uppercase
+            
+            .copy
+                display inline-block
+                margin-left 45px
+                text-transform uppercase
+                
+            
+        
+            
+        
+            
+            
+                
+        
+            
+            
+            
+    
             
             
         

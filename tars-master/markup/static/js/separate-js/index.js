@@ -1,60 +1,56 @@
 $(document).ready(function() {
-
-     
-$('.center').slick({
-  centerMode: true,
-  centerPadding: '200px',
-  slidesToShow: 1,
-  responsive: [
-      
-      
-    {
-      breakpoint: 2000,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '310px',
-        slidesToShow: 1
-      }
-    }, 
-      
-      
-      
-      
-    {
-      breakpoint: 1800,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '450px',
-        slidesToShow: 1
-      }
-    },
-            
-    {
-      breakpoint: 1200,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '150px',
-        slidesToShow: 1
-      }
-    },
-      
-      
-      
-    {
-      breakpoint: 1000,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});    
-  
     
+    var openMenuClick = 0;
+
+$("#footer_smb").click(function() {
+    
+    $("#footer_smb_inp").trigger('click');
+});
+    
+    
+    
+    
+
+function openMenu() {
+    
+    if (openMenuClick == 0) {
+    
+        $("#mobile_menu").fadeIn(500);
+        openMenuClick = 1;
+}
+
+    else {
+        
+        $("#mobile_menu").fadeOut(500);
+        openMenuClick = 0;
+        
+        
+    }
+    
+}
+    
+
+    
+    
+   
+$("#openmenu_button").click(function() {
+
+    
+    openMenu();
+    
+    
+});
+    
+     
+   
+$("#closemenu_button").click(function() {
+    
+    openMenu();
+    
+});
+    
+     
+    
+
     
 });

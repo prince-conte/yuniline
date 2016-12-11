@@ -4,9 +4,9 @@ mixin footer(data)
             .footer__grid-sub
             
                 .footer__item
-                    .footer__subscribe
-                        .footer__subscribe_title Подписка онлайн 
-                        .footer__subscribe_description Подписывайтес на любимые издания у нас на сайте
+                    .footer__body.subscribe-magazine
+                        .footer_title Онлайн подписка на издания
+                        p.footer_description Подписывайтесь на любимые издания у нас на сайте
                         .button-block
                             a.button(href="#") 
                                 span подписаться
@@ -14,7 +14,130 @@ mixin footer(data)
                     .footer__magazine
                         img(src="static/img/general/jornals.png")
                     
+            
                 .footer__item
-                .footer__item
-                        
+                    .footer__body
+                        .footer_title Подписка на новости и акции <br> издательства
+                        .footer_description Будьте в курсе новостей и акций <BR> издательства "ЮНИЛАЙН"
+                        form.footer__subscribe-news
+                            input.footer__subscribe-news_input-email(type="email" placeholder="Ваш e-mail" required)
+                            .button-block.footer__subscribe-news_send
+                                a.button#footer_smb
+                                    span подписаться
+                                
+                                input#footer_smb_inp(type="submit")
+ 
                 
+                .footer__item
+                    .footer__body
+                        .footer_title Контакты
+                        
+                        .footer__contacts
+                            .footer__contacts_title Официальные страницы:
+                                  
+                            a.vkontakte-ico(href="#")
+                          
+                            a.facebook-ico(href="#")
+                          
+                            a.odnoklassniki-ico(href="#")
+                        
+                                        
+                        .footer__contacts
+                            .footer__contacts_title Телефоны:
+                                a.footer__contacts_link(href="tel:+74812358777") 8(4812) 358-777
+                                        
+                        .footer__contacts
+                            .footer__contacts_title E-mail:
+                                a.footer__contacts_link(href="mailto:total@yuniline.ru") total@yuniline.ru
+                                
+                                
+            .footer__grid-sub
+            
+                .footer__item.item-25per
+                    .footer__body
+                    
+                        .footer_title Контакты
+                        .footer__sub-menu 
+                        
+                            li.footer__sub-menu_item
+                                a(href="#") Издательство
+                                        
+                            li.footer__sub-menu_item
+                                a(href="#") История
+                                        
+                            li.footer__sub-menu_item
+                                a(href="#") Представительства
+                                        
+                            li.footer__sub-menu_item
+                                a(href="#") Партнеры
+                                        
+                            li.footer__sub-menu_item
+                                a(href="#") Вакансии
+                
+            
+                .footer__item.item-25per
+                    .footer__body
+                    
+                        .footer_title Сотрудничество
+                        .footer__sub-menu 
+                        
+                            li.footer__sub-menu_item
+                                a(href="#") Авторам
+                                        
+                            li.footer__sub-menu_item
+                                a(href="#") Рекламодателям
+                                        
+                            li.footer__sub-menu_item
+                                a(href="#") Распространителям
+                                        
+                            li.footer__sub-menu_item
+                                a(href="#") Медиакиты
+                
+
+                       
+            
+                .footer__item.item-25per
+                    .footer__body
+                    
+                        .footer_title Магазин ЮНИЛАЙН
+                        .footer__sub-menu 
+                        
+                            li.footer__sub-menu_item
+                                a(href="#") Подписка
+                                        
+                            li.footer__sub-menu_item
+                                a(href="#") Прошлые номера
+                                        
+                            li.footer__sub-menu_item
+                                a(href="#") Сувенирная продукция
+                                                                             
+                            li.footer__sub-menu_item
+                                a(href="#") Корзина
+                                        
+                            li.footer__sub-menu_item
+                                a(href="#") Оплата и доставка
+                
+
+                
+            
+                .footer__item.item-25per
+                    .footer__body
+                    
+                        .footer_title Конкурсы
+                        .footer__sub-menu 
+                        
+                            li.footer__sub-menu_item
+                                a(href="#") Все конкурсы
+                                        
+                            li.footer__sub-menu_item
+                                a(href="#") Онлайн регистрация в конкурсах
+                                        
+                            li.footer__sub-menu_item
+                                a(href="#") Правила участия в конкурсах
+                                
+            .footer__grid-sub
+                .footer__copyright
+                    p ЮНИЛАЙН - ИЗДАТЕЛЬСТВО ПЕЧАТНОЙ ПРОДУКЦИИ
+                        span.copy © 2010-2017. Все права защищены. 
+
+
