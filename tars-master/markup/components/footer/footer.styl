@@ -10,6 +10,14 @@
         display flex
         flex-wrap wrap
         padding 0 10px
+        margin-top 30px
+        padding-top 35px
+        border-top solid 1px #E6EAEA
+        &:first-child
+            border-top solid 0px #E6EAEA
+            margin-top 0
+
+            
         
         
     &__item
@@ -46,6 +54,7 @@
         text-align left
         line-height 22px
         margin-bottom 20px
+
             
     &_description
         font-size 16px
@@ -185,6 +194,23 @@
                 display inline-block
                 margin-left 45px
                 text-transform uppercase
+                
+                
+                
+                
+                
+                
+    &__razdel-title
+        position relative
+        &:before
+            content ''
+            position absolute
+            display block
+            width 35px
+            height 3px
+            background colfirm
+            bottom -8px
+            
                 
             
         
