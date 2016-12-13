@@ -44,14 +44,15 @@
         flex-direction column
         justify-content center
         height auto
+        background ALTERNATE_COL 
         z-index 99
         
-        li
+        &_item
             display flex
-            background coltxt
+            background ALTERNATE_COL 
             height 60px
             align-items center
-            border-top solid 1px #5a5a5a
+            border-top solid 1px FONT_COLOR +3%
         
         
         a
@@ -63,14 +64,14 @@
             padding 0 35px
             
         li:hover
-            background #3a3939
+            background ALTERNATE_COL  + 10%
             a
                 color colbg
             
             
             
     &__topmenu__item:hover
-        background coltxt
+        background ALTERNATE_COL
         a
             color colbg
             
@@ -80,7 +81,40 @@
             
         
             
+    &__sub-subscribe
+        display flex
+        min-width 500px
+        flex-basis 400px
+        flex-wrap wrap
+        align-items flex-start
+        padding 20px
+        align-content flex-start
+        max-height 345px
+        
+        &_magazine
+            max-width 25%
+            flex-basis 25%
+            padding 10px
+            height auto
+        
+        a
+            padding 0px
+        
+        img
+            width 100%
+            height auto
             
+      
+    .button-block
+        padding 0 25px 20px
+        margin-top -5px
+            
+    .button
+        display inline-block
+        
+        
+        
+        
                 
         
         
