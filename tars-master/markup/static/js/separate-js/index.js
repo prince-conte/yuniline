@@ -97,6 +97,17 @@ $("#header_region_close").click(function() {
     openRegion();
 });
     
+      
+   
+$("#header_login_popup").click(function() {
+    openLogin();  
+});
+    
+    
+$("#header_login_close").click(function() {   
+    openLogin();
+});
+    
      
     
 
