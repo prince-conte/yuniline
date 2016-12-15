@@ -53,19 +53,19 @@ module.exports = {
          * Use linting of js-files
          * @type {Boolean}
          */
-        lint: true,
+        lint: false,
 
         /**
          * Use babel for ES6(ES7-ESNext) syntax support
          * @type {Boolean}
          */
-        useBabel: true,
+        useBabel: false,
 
         /**
          * Remove console.log and debugger from js code in release mode
          * @type {Boolean}
          */
-        removeConsoleLog: true,
+        removeConsoleLog: false,
 
         // Special config for webpack
         webpack: {

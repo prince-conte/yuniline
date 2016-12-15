@@ -1,15 +1,13 @@
 mixin mobile-menu (data)
-
-
-    .mobile-menu#mobilemenu
+    .mobile-menu#mobileMenu
         .mobile-menu__body-menu
-            ul.mobile-menu__body-menu__ul
+            ul.mobile-menu__body-menu__ul#tabs
         
-                li.mobile-menu__body-menu__item
+                li.mobile-menu__body-menu__item.active__sub#sub-menu-1
                     a.mobile-menu__body-menu__item_link(href="#") Издательство
                     
                                 
-                    ul.mobile-menu__sub-menu      
+                    ul.mobile-menu__sub-menu
                     
                         li.mobile-menu__sub-menu__item
                             a История
@@ -24,11 +22,11 @@ mixin mobile-menu (data)
                             a Партнёры
                          
                 
-                li.mobile-menu__body-menu__item
+                li.mobile-menu__body-menu__item#sub-menu-2
                     a.mobile-menu__body-menu__item_link(href="#") Новости
                     
                                 
-                    ul.mobile-menu__sub-menu      
+                    ul.mobile-menu__sub-menu
                     
                         li.mobile-menu__sub-menu__item
                             a Все новости
@@ -45,11 +43,11 @@ mixin mobile-menu (data)
                         
                     
                 
-                li.mobile-menu__body-menu__item
+                li.mobile-menu__body-menu__item#sub-menu-3
                     a.mobile-menu__body-menu__item_link(href="#") Сотрудничество
                     
                                 
-                    ul.mobile-menu__sub-menu      
+                    ul.mobile-menu__sub-menu
                     
                         li.mobile-menu__sub-menu__item
                             a Авторам
@@ -65,11 +63,11 @@ mixin mobile-menu (data)
 
                     
                 
-                li.mobile-menu__body-menu__item
+                li.mobile-menu__body-menu__item#sub-menu-4
                     a.mobile-menu__body-menu__item_link(href="#") Онлайн-подписка
                     
                                 
-                    .mobile-menu__sub-menu 
+                    .mobile-menu__sub-menu
                         .mobile-menu__sub-jornals
                             h6.mobile-menu_title-sub-menu Лидеры подписки
                             
@@ -120,11 +118,11 @@ mixin mobile-menu (data)
                     
 
 
-                li.mobile-menu__body-menu__item
+                li.mobile-menu__body-menu__item#sub-menu-5
                     a.mobile-menu__body-menu__item_link(href="#") Магазин
                     
                                 
-                    ul.mobile-menu__sub-menu      
+                    ul.mobile-menu__sub-menu  
                     
                         li.mobile-menu__sub-menu__item
                             a Подписка
@@ -143,11 +141,11 @@ mixin mobile-menu (data)
                             a Оплата и доставка
 
                 
-                li.mobile-menu__body-menu__item
+                li.mobile-menu__body-menu__item#sub-menu-6
                     a.mobile-menu__body-menu__item_link(href="#") Конкурсы
                     
                                 
-                    ul.mobile-menu__sub-menu      
+                    ul.mobile-menu__sub-menu
                     
                         li.mobile-menu__sub-menu__item
                             a Все конкурсы
@@ -159,11 +157,11 @@ mixin mobile-menu (data)
                             a Правила участия в конкурсах
 
    
-                li.mobile-menu__body-menu__item
+                li.mobile-menu__body-menu__item#sub-menu-7
                     a.mobile-menu__body-menu__item_link(href="#") ВОЙТИ / ЗАРЕГИСТРИРОВАТЬСЯ
                     
                                 
-                    .mobile-menu__sub-menu      
+                    .mobile-menu__sub-menu
                         form.mobile-menu__sub-menu__form
                             label Войти
                             input(placeholder="Логин или e-mail")
@@ -180,11 +178,11 @@ mixin mobile-menu (data)
                                     
                            
    
-                li.mobile-menu__body-menu__item
+                li.mobile-menu__body-menu__item#sub-menu-8
                     a.mobile-menu__body-menu__item_link(href="#") Ваш регион
                     
                                 
-                    .mobile-menu__sub-menu      
+                    .mobile-menu__sub-menu
                         form.mobile-menu__sub-menu__form
                             label Выбрать регион
                             input(placeholder="Смоленск")
@@ -197,11 +195,11 @@ mixin mobile-menu (data)
                     
 
                 
-                li.mobile-menu__body-menu__item
+                li.mobile-menu__body-menu__item#sub-menu-9
                     a.mobile-menu__body-menu__item_link(href="#") Поиск по сайту
                     
                                 
-                    .mobile-menu__sub-menu      
+                    .mobile-menu__sub-menu
                         form.mobile-menu__sub-menu__form
                             label Поиск по сайту
                             input(placeholder="Введите поисковую фразу")
@@ -211,11 +209,11 @@ mixin mobile-menu (data)
                                 
                             
 
-                li.mobile-menu__body-menu__item
+                li.mobile-menu__body-menu__item#sub-menu-10
                     a.mobile-menu__body-menu__item_link(href="#") Задать вопрос
                     
                                 
-                    .mobile-menu__sub-menu      
+                    .mobile-menu__sub-menu
                         form.mobile-menu__sub-menu__form
                             label Задать вопрос
                             input(placeholder="Ваше имя")
@@ -227,10 +225,10 @@ mixin mobile-menu (data)
                                     span Поиск
                              
         
-                li.mobile-menu__body-menu__item
+                li.mobile-menu__body-menu__item#sub-menu-11
                     a.mobile-menu__body-menu__item_link(href="#") Контакты
                                
-                    .mobile-menu__sub-menu      
+                    .mobile-menu__sub-menu
                         form.mobile-menu__sub-menu__form
                             label Контакты
                             div#map
