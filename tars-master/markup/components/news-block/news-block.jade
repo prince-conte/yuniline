@@ -1,8 +1,11 @@
 mixin news-block(data)
+
+    include /category-news/category-news
+
     .news-block
-    
-            
-    
+        +category-news(data)
+        
+
         a.news-block__anons-article.news-block__anons-article-big
             .news-block__anons-article__content
                 .news-block__anons-article_tag новости
@@ -12,7 +15,6 @@ mixin news-block(data)
                 img(src="static/img/general/deti.jpg")
 
             
-
     
         a.news-block__anons-article
             .news-block__anons-article__image-box

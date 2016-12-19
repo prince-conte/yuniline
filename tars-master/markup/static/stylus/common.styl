@@ -52,7 +52,7 @@ article
             background coltxt
     
     
-.index-container
+.all-container
     background colbg
     
 .content
@@ -79,7 +79,33 @@ article
 
 .page__buffer
     height 50px
-    float-w(100%)
+    
+.paginator
+    display block
+    margin-top 25px
+    
+.paginator__item
+    display inline-block
+    margin-right 5px
+    &:first-child
+        margin-left 10px
+    &:last-child
+        a
+            color colfirm
+    
+    a,
+    span
+        color coltxt
+        font-family fontb
+        font-size 12px
+        text-transform uppercase
+        m-speed(.2s)
+    a:hover
+            color colfirm
+            
+    
+            
+
 
     
 h1,

@@ -1,0 +1,64 @@
+.category-news
+    display flex
+    flex-wrap wrap
+    max-width 100%
+    flex-basis 100%
+    
+    &__active-category 
+        margin-top 65px
+        margin-bottom 10px
+        display flex
+        flex-wrap nowrap
+        justify-content center
+        max-width 100%
+        flex-basis 100%
+        
+        &_title
+            display inline-block
+            font-size 26px
+            color coltxt
+            font-family fontblack
+            text-transform uppercase
+            .active
+                color colfirm
+            
+        
+    
+    &__grid
+        display flex
+        flex-wrap nowrap
+        justify-content center
+        max-width 100%
+        flex-basis 100%
+        
+    &__item
+        margin 0 20px
+        display inherit
+        position relative
+        &:before
+            content ''
+            position absolute
+            display block
+            width 5px
+            height 5px
+            background coltxt
+            top 10px
+            right -22px
+            border-radius 50%
+            
+    
+        
+        a
+            color colfirm
+            font-size 16px
+            
+    &__item:last-child
+        &:before
+            display none
+            
+    
+            
+            
+        
+        
+    

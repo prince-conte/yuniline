@@ -4,29 +4,44 @@ html(class="no-js", lang="ru")
     include ../components/head/head
     include ../components/header/header
     include ../components/nav/nav
-    include ../components/center-slider/center-slider
     include ../components/all-container/all-container
     include ../components/footer/footer
-    include ../components/mobile-menu/mobile-menu  
+    include ../components/mobile-menu/mobile-menu    
     
     include ../components/news-block/news-block
     include ../components/aside-sub-container/aside-sub-container
     include ../components/popular-article-block/popular-article-block
     include ../components/banner/banner
+    include ../components/category-news/category-news
+
     
+    
+    
+    //include ../components/footer/footer 
 
     
     
 
     head
-        +head(head.defaults)
+        +head(head.news)
     body.page
         |%=symbols=%
 
         +header()
         .page__wrapper
             +nav()
-            +center-slider()
+            .paginator
+                .content
+                    
+                    .paginator__item
+                        a(href="#") Главная
+                                            
+                    .paginator__item
+                        span >
+                                                                    
+                    .paginator__item
+                        a(href="#") Новости
+                        
             .all-container
                 .content
                     +news-block()

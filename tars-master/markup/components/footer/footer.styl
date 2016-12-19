@@ -26,7 +26,7 @@
         max-width 33.33333%
         flex-basis 33.33333%
         min-height 250px
-        max-height 300px
+        max-height 250px
         flex-flow row
         &:last-child
             padding-left 55px
@@ -94,8 +94,6 @@
             text-align left
             .button
                 outline none
-                margin-left -7px
-                top -2px
                 
             input
                 visibility hidden
@@ -105,29 +103,32 @@
                 
                 
     &__contacts
-        height 40px
+        height 20px
         max-width 100%
         flex-basis 100%
         display flex
         justify-content left
-        align-items center
+        align-items start
         position relative
         
         &_title
             display inline-block
             font-size 16px
             margin-right 25px
+            font-family fontb
             
 
         a
             margin 0 7px
+            
             
         &_link
             display inline-block
             margin 0
             font-size 14px
             color coltxt
-            font-family fontb
+            display inline
+            font-family fonttxt
             m-speed(.4s)
             &:hover
                 color colfirm
