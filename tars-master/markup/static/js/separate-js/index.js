@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    
+SocialShareKit.init();
 
 centerSlider()  
 
@@ -48,9 +50,10 @@ openMenu()
     
      
       
-     
+
    
 
 
     
 });
+

@@ -33,27 +33,9 @@ ul
     padding 0
     
 
-article
-    
-    li
-        display block
-        margin 15px 0
-        padding-left 12px
-        position relative
-        &:before
-            content '';
-            position absolute
-            display block
-            top 12px
-            left 0px
-            width 4px
-            height 4px
-            border-radius 50%
-            background coltxt
-    
-    
 .all-container
     background colbg
+    min-height 1200px
     
 .content
     position relative
@@ -97,7 +79,7 @@ article
     span
         color coltxt
         font-family fontb
-        font-size 12px
+        font-size 16px
         text-transform uppercase
         m-speed(.2s)
     a:hover
@@ -136,11 +118,93 @@ h4
         font-size 22px
         line-height 24px
     
+ 
+article   
     
-p
-    margin 0px
-    padding 0px
-    color coltxt
-    font-size BASE_SIZE
+    
+    h2,
+    h3,
+    h4,
+    h5
+        display: inherit
+        font-family: fontb
+        margin: 10px 0
+        color: #3e3e3e
+        width: 100%
+        text-transform: uppercas 
+        margin-top 20px
+        margin-bottom 5px
+        padding 0 10px
+        
+    h2
+        font-size 18px
+        line-height 18px
+            
+    h3
+        font-size 16px
+        line-height 16px
+                  
+    h4
+        font-size 16px
+        line-height 16px
+        text-transform none
+                        
+    h5
+        font-size 15px
+        line-height 16px
+        text-transform none
+        font-family fonttxt
+        
+    p,
+    ul
+        margin 0px
+        padding 15px 10px
+        color coltxt
+        font-size BASE_SIZE
+        font-family fonttxt
+        
+        img
+            width 100%
+            height auto
+        
+        
+    b
+        font-family fontb
+        font-style normal
+    
+    .article-social-description
+        font-size BASE_SIZE + 1
+        font-family fontb
+        padding-bottom 25px
+        
+    .ssk-share-title
+        display block
+        padding 30px 10px 10px
+        font-size 22px
+        font-family fontb
+        
+    .ssk-group
+        padding 10px
+        
+        
+        
+    
+    li
+        display block
+        padding 5px 10px
+        padding-left 15px
+        position relative
+        &:before
+            content '';
+            position absolute
+            display block
+            top 15px
+            left 0px
+            width 5px
+            height 5px
+            border-radius 50%
+            background coltxt
+    
+    
     
     

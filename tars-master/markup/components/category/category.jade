@@ -1,0 +1,40 @@
+mixin category(data)
+
+    if data.categoryNews
+        .category-news
+            .category-news__active-category 
+                .category-news__active-category_title Категория: <span class="active">Все новости<span>
+            
+            
+            ul.category-news__grid
+        
+                li.category-news__item
+                    a Новости
+                
+                li.category-news__item
+                    a События
+                 
+                li.category-news__item
+                    a Конкурсы
+                         
+                li.category-news__item
+                    a Все новости
+        
+
+    if data.categoryIsdatelstvo
+        .category-news
+            .category-news__active-category 
+                h1.category-news__active-category_title Издательство: <span class="active">История<span>
+            
+            
+            ul.category-news__grid
+        
+                li.category-news__item
+                    a(href="#") История
+                
+                li.category-news__item
+                    a(href="#") Представительства
+                 
+                li.category-news__item
+                    a(href="#") Вакансии
+
