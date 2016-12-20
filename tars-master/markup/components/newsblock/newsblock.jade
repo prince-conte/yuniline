@@ -1,9 +1,12 @@
-mixin news-block(data)
+include /category/category
+mixin newsblock(data)
 
-    include /category-news/category-news
+
 
     .news-block
-        +category-news(data)
+    
+        if data.useCategoryNews
+            +category(category.news)
         
 
         a.news-block__anons-article.news-block__anons-article-big
@@ -84,5 +87,10 @@ mixin news-block(data)
                 .news-block__anons-article_date Дата публикации: 06-12-2016
             .news-block__anons-article__image-box
                 img(src="static/img/general/6let.jpg")
+                
+        if data.useAdd        
+            .button-block
+                a.button
+                    span показать еще
 
        

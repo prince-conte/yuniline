@@ -8,11 +8,11 @@ html(class="no-js", lang="ru")
     include ../components/footer/footer
     include ../components/mobile-menu/mobile-menu    
     
-    include ../components/news-block/news-block
+    include ../components/newsblock/newsblock
     include ../components/aside-sub-container/aside-sub-container
-    include ../components/popular-article-block/popular-article-block
+    include ../components/populararticleblock/populararticleblock
     include ../components/banner/banner
-    include ../components/category-news/category-news
+
 
     
     
@@ -37,16 +37,17 @@ html(class="no-js", lang="ru")
                         a(href="#") Главная
                                             
                     .paginator__item
-                        span >
+                        span /
                                                                     
                     .paginator__item
                         a(href="#") Новости
                         
             .all-container
                 .content
-                    +news-block()
+                    +newsblock(newsblock.categoryTrue)
+
                     .aside-sub-container
-                        +popular-article-block()
+                        +populararticleblock(populararticleblock.news)
                         +banner()
             +footer()
         +mobile-menu()

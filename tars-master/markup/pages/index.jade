@@ -9,9 +9,9 @@ html(class="no-js", lang="ru")
     include ../components/footer/footer
     include ../components/mobile-menu/mobile-menu  
     
-    include ../components/news-block/news-block
+    include ../components/newsblock/newsblock
     include ../components/aside-sub-container/aside-sub-container
-    include ../components/popular-article-block/popular-article-block
+    include ../components/populararticleblock/populararticleblock
     include ../components/banner/banner
     
 
@@ -29,9 +29,9 @@ html(class="no-js", lang="ru")
             +center-slider()
             .all-container
                 .content
-                    +news-block()
+                    +newsblock(newsblock.categoryFalse)
                     .aside-sub-container
-                        +popular-article-block()
+                        +populararticleblock(populararticleblock.article)
                         +banner()
             +footer()
         +mobile-menu()
