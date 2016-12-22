@@ -52,7 +52,15 @@ html(class="no-js", lang="ru")
                     +newsarticle()
                     .aside-sub-container
                         +populararticleblock(populararticleblock.newsrecommendet)
-                        +banner()
+                                                            
+                        .banner.sticky-block
+                            .banner_title 1000 советов, успей подписаться на любимое издание!
+                            img(src="static/img/general/jornal.png")
+                            .button-block
+                                a.button
+                                    span подписаться
+                            
+
             +footer()
         +mobile-menu()
             
