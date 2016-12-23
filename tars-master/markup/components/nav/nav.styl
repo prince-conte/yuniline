@@ -4,6 +4,8 @@
     background colbg
     z-index 999
     border-bottom  solid 1px #E6EAEA
+    @media screen and (min-width: 300px)  and (max-width: 1023px) 
+        display none
     
     &__topmenu
         display flex
@@ -23,8 +25,19 @@
         order 1
         cursor pointer
         m-speed(.3s)
+        z-index: 99999;
         &:last-child
             border-right  solid 0px
+            @media screen and (max-width: 1600px)   
+                .nav__sub-menu
+                    right 0px
+                    left auto
+                    
+        @media screen and (max-width: 1400px) 
+            padding 0 20px
+        @media screen and (max-width: 1260px)
+            padding 0 10px
+            
         
         a
             display block
@@ -33,6 +46,8 @@
             font-family fontb
             text-transform uppercase
             white-space nowrap
+            @media screen and (max-width: 1260px)
+                font-size 13px
             
             
             
@@ -66,6 +81,12 @@
             text-transform uppercase
             padding 0 35px
             white-space nowrap
+                    
+            @media screen and (max-width: 1400px) 
+                padding 0 20px
+            @media screen and (max-width: 1260px)
+                padding 0 10px
+            
             
         li:hover
             background ALTERNATE_COL  + 10%
@@ -78,6 +99,8 @@
         background ALTERNATE_COL
         a
             color colbg
+            @media screen and (max-width: 1260px)
+                font-size 13px
             
         .nav__sub-menu
             display flex

@@ -3,7 +3,9 @@
     flex-direction column
     flex-basis 60%
     max-width 65%
-    padding 20px 0
+    @media screen and (min-width: 300px) and (max-width: 1023px)
+        flex-basis 100%
+        max-width 100%
     
     .button-block
         padding 12px 10px 10px
@@ -19,6 +21,11 @@
         height 280px
         flex-wrap wrap
         margin 10px 0
+        @media screen and (max-width: 1260px)
+            height 193px
+        @media screen and (min-width: 300px) and (max-width: 599px)
+            height auto
+            min-height 130px
         
         
         &__image-box
@@ -28,6 +35,8 @@
             padding-right 10px
             overflow hidden
             height inherit
+            @media screen and (min-width: 300px) and (max-width: 599px)
+                display none
         
             img
                 width 100%
@@ -43,7 +52,9 @@
             padding-right 10px
             align-content center
             flex-wrap wrap
-
+            @media screen and (min-width: 300px) and (max-width: 599px)
+                flex-basis 100%
+                max-width 100%
         
         &_title
             display inherit
@@ -53,7 +64,18 @@
             margin 10px 0
             color coltxt
             width 100%
-            text-transform uppercase
+            text-transform uppercase  
+            
+            @media screen and (max-width: 1440px)
+                font-size 20px
+                    
+            @media screen and (max-width: 1260px)
+                font-size 18px
+                line-height 20px
+                            
+            @media screen and (min-width: 300px) and (max-width: 599px)
+                font-size 16px
+                line-height 18px
         
               
         &_tag
@@ -87,6 +109,7 @@
         flex-flow column
         height auto
         max-height none
+
         
         .news-block__anons-article__image-box
             width 100%
@@ -95,7 +118,9 @@
             padding 0px 10px 20px
             height auto
             max-height none
-            
+            @media screen and (min-width: 300px) and (max-width: 599px)
+                display block
+        
             
         .news-block__anons-article__content
             width 100%

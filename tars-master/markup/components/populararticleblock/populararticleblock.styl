@@ -7,6 +7,18 @@
     min-height 350px
     m-speed(.1s)
     
+    @media screen and (max-width: 1440px) 
+        padding-left 20px
+        padding-right 20px
+         
+    @media screen and (min-width: 300px) and (max-width: 588px) 
+        padding-left 0px
+        padding-right 0px
+        
+    
+    
+        
+    
     &__title
         display block
         text-align center
@@ -17,6 +29,8 @@
         position relative
         text-transform uppercase
         font-family fontb
+        @media screen and (max-width: 1440px) 
+            font-size 18px
         
         &:before
             content '';
@@ -41,6 +55,8 @@
         list-style: none;
         margin-left: 18px;
         flex-direction column
+        @media screen and (max-width: 1440px) 
+            margin-left 0px
     
         &__anons  
             position: relative;
@@ -61,11 +77,15 @@
             &:hover
                 border-bottom solid 1px colfirm
                 
+            @media screen and (min-width: 300px) and (max-width: 588px)
+                padding-left 0px
+                
 
             a
                 display inherit
                 justify-content space-between
                 flex-flow row
+                flex-basis 100%
             
             &_titile-anons
                 font-size 12px
@@ -105,6 +125,8 @@
         font-size: 26px;
         font-weight 700
         font-family fonttxt
+        @media screen and (min-width: 300px) and (max-width: 588px)
+            display none
    
             
             

@@ -14,6 +14,59 @@ body
     line-height LINE_HEIGHT
 
 
+    
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: colbg;
+  z-index: 9999999;
+}
+
+.pace-inactive
+    background transparent;
+
+.pace.pace-inactive .pace-progress {
+  display: none;
+  
+}
+
+.pace .pace-progress {
+  position: fixed;
+  z-index: 1000000000000000;
+  top: 0;
+  right: 0;
+  height: 5rem;
+  width: 5rem;
+
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -ms-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.pace .pace-progress:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: .5rem;
+  content: attr(data-progress-text);
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  font-size: 5rem;
+  line-height: 1;
+  text-align: right;
+  color: colfirm;
+} 
+    
+    
+    
+    
 .page
     // Стили для body
 
@@ -52,26 +105,29 @@ ul
     min-width 300px
     height inherit
     
-    @media screen and (min-width: 600px) and (max-width: 1199px)
+    @media screen and (max-width: 1440px) 
         width 100%
         padding 0 20px
+
     
-    @media screen and (min-width: 300px) and (max-width: 1199px)
+    @media screen and (min-width: 300px)  and (max-width: 599px) 
         width 100%
-        padding 0 20px
+        padding 0 10px
 
 
 .page__wrapper
     top 90px
     position relative
     background colbg
+    @media screen and (min-width: 300px)  and (max-width: 599px) 
+        top 60px
 
 .page__buffer
     height 50px
     
 .paginator
     display block
-    margin-top 25px
+    padding-top 25px
     
 .paginator__item
     display inline-block
@@ -81,6 +137,8 @@ ul
     &:last-child
         a
             color colfirm
+
+      
     
     a,
     span
@@ -89,9 +147,12 @@ ul
         font-size 16px
         text-transform uppercase
         m-speed(.2s)
+        @media screen and (max-width: 1440px) 
+            font-size 14px
     a:hover
             color colfirm
             
+      
     
             
 

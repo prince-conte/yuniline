@@ -31,12 +31,44 @@
         &:last-child
             padding-left 55px
             
+            @media screen and (max-width: 1440px)
+                padding-left 35px
+                         
+            @media screen and (max-width: 1260px)
+                padding-left 0px
+                max-width 100%
+                flex-basis 100%
+                
+        @media screen and (min-width: 601px) and (max-width: 1260px)
+            max-width 50%
+            flex-basis 50%
+        @media screen and (min-width: 300px) and (max-width: 600px) 
+            max-width 100%
+            flex-basis 100%
+            padding-top 15px
+            
+            
+        
+            
     .item-25per
         max-width 25%
         flex-basis 25%
         &:last-child
             padding-left 0px
-        
+            
+        @media screen and (min-width: 768px) and (max-width: 1023px)    
+            max-width 50%
+            flex-basis 50%
+                        
+        @media screen and (min-width: 590px) and (max-width: 767px)    
+            max-width 50%
+            flex-basis 50%
+                                   
+        @media screen and (min-width: 300px) and (max-width: 588px)    
+            max-width 100%
+            flex-basis 100%
+            
+            
     &__body
         display inherit
         max-width 100%
@@ -110,12 +142,23 @@
         justify-content left
         align-items start
         position relative
+                    
+        @media screen and (min-width: 300px) and (max-width: 588px)
+            width 100%
+            display block
+            height auto
+
         
         &_title
             display inline-block
             font-size 16px
             margin-right 25px
             font-family fontb
+            @media screen and (max-width: 1260px)
+                br 
+                    display none
+
+            
             
 
         a
@@ -139,17 +182,26 @@
             bg-svg($vkontakte); 
             width 24px
             height 24px
+            @media screen and (min-width: 300px) and (max-width: 588px)
+                display inline-block
+                margin 7px
                        
         .facebook-ico
             bg-svg($facebook); 
             width 24px
             height 24px
+            @media screen and (min-width: 300px) and (max-width: 588px)
+                display inline-block
+                margin 7px
             
                                    
         .odnoklassniki-ico
             bg-svg($odnoklassniki); 
             width 24px
             height 24px
+            @media screen and (min-width: 300px) and (max-width: 588px)
+                display inline-block
+                margin 7px
             
             
             
@@ -195,6 +247,8 @@
                 display inline-block
                 margin-left 45px
                 text-transform uppercase
+                @media screen and (min-width: 300px) and (max-width: 767px)
+                    margin-left 0px
                 
                 
                 

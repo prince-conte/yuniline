@@ -8,6 +8,8 @@
     background colbg
     border-bottom solid 1px #E6EAEA
     z-index 999999 
+    @media screen and (min-width: 300px)  and (max-width: 599px)
+        height 60px
     
     
     &__boxmenu
@@ -114,9 +116,23 @@
         display block
         height 65px
         width auto
+        
+        @media screen and (min-width: 600px) and (max-width: 1023px)
+            width: 100%;
+            flex-basis: 100%;
+                  
+        @media screen and (min-width: 300px) and (max-width: 599px)
+            width: 100%;
+            flex-basis: 100%;
+            height 45px
+            
         img
             height 100%
             width auto
+            @media screen and (min-width: 300px) and (max-width: 1023px)
+                position relative
+                display block
+                margin 0 auto
             
             
     &__shop-and-login
@@ -133,6 +149,13 @@
         justify-content center
         align-items center
         
+        @media screen and (max-width: 1800px)
+            width 200px
+            
+        @media screen and (max-width: 599px)
+            display none
+            
+        
         span
             color #fff
             font-family fontb
@@ -140,20 +163,37 @@
             display inline-block
             text-transform uppercase
             
+
     &__login
         padding 0 35px
         height inherit
         display inherit
         justify-content center
         align-items center
+        @media screen and (min-width: 300px) and (max-width: 1023px)
+            display none
         
         span
             display inline-block
             font-size 12px
             color coltxt
             text-transform uppercase
+
             b
                 font-family fontb
+                br
+                    display none
+            
+                @media screen and (max-width: 1800px)
+                    font-size 13px
+                    br
+                        display block
+                            
+                @media screen and (max-width: 1260px)
+                    font-size 11px 
+                    br
+                        display block
+                
                 
                 
                 
@@ -166,6 +206,12 @@
         align-items center
         position relative
         flex-basis 340px
+        @media screen and (max-width: 1440px)
+            padding 0 
+            padding-left 35px
+        @media screen and (max-width: 1260px)
+            display none
+             
         
         &_go
             content '';
@@ -176,6 +222,8 @@
             background  url(../img/general/search.svg)
             left 37px
             top 37px
+            @media screen and (max-width: 1440px)
+                left 10px
         
         
         
@@ -198,6 +246,10 @@
         justify-content center
         align-items center
         position relative
+        
+        @media screen and (min-width: 300px) and (max-width: 1023px)
+            display none
+            
         a
             margin 0 7px
             
@@ -230,7 +282,16 @@
         align-items center
         flex-basis 225px
         max-width 225px
-        
+        @media screen and (max-width: 1800px)
+            flex-basis 340px
+            max-width 340px
+            
+        @media screen and (max-width: 1600px)
+            flex-basis 340px
+            max-width 340px
+            flex-direction column
+        @media screen and (max-width: 1260px)
+            display none
                 
         &_active
             display inline-block
@@ -242,12 +303,17 @@
             cursor pointer
             position relative
             white-space nowrap
+            @media screen and (max-width: 1600px)
+                margin-left 36px
+            
+                
         b
             font-size 12px
             font-family fontb
             color coltxt
             text-transform uppercase
             white-space nowrap
+            
             
         
           

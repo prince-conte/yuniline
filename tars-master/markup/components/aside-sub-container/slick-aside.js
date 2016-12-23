@@ -1,3 +1,13 @@
+
+
+function slickBanner() {
+
+desktopWidthSlick = Modernizr.mq('(min-width: 1200px)');
+
+if (desktopWidthSlick) {
+    
+    
+
 $(window).scroll(function() {
 	/*----------------------------------
 	sticky block script by makeasite.ru
@@ -21,3 +31,18 @@ $(window).scroll(function() {
 		}
 	}
 });
+  
+    
+}
+
+
+}
+
+
+
+
+
+
+
+
+

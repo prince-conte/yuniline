@@ -10,6 +10,16 @@ $('.center').slick({
       
       
     {
+      breakpoint: 3000,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '610px',
+        slidesToShow: 1
+      }
+    }, 
+           
+    {
       breakpoint: 2000,
       settings: {
         arrows: true,
@@ -24,17 +34,17 @@ $('.center').slick({
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '450px',
+        centerPadding: '290px',
         slidesToShow: 1
       }
     },
             
     {
-      breakpoint: 1200,
+      breakpoint: 1600,
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '150px',
+        centerPadding: '220px',
         slidesToShow: 1
       }
     },
@@ -42,7 +52,17 @@ $('.center').slick({
       
       
     {
-      breakpoint: 1000,
+      breakpoint: 1400,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '100px',
+        slidesToShow: 1
+      }
+    },
+          
+    {
+      breakpoint: 1200,
       settings: {
         arrows: true,
         centerMode: true,
@@ -50,6 +70,8 @@ $('.center').slick({
         slidesToShow: 1
       }
     }
+      
+      
   ]
 });    
   

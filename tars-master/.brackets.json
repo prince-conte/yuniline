@@ -1,5 +1,6 @@
 {
     "jscodehints.detectedExclusions": [
-        "/Users/aleksandr/Desktop/yuniline/tars-master/markup/components/news-block/data/data.js"
+        "/Users/aleksandr/Desktop/yuniline/tars-master/markup/components/news-block/data/data.js",
+        "/Users/aleksandr/Desktop/yuniline/tars-master/markup/static/js/separate-js/index.js"
     ]
 }
