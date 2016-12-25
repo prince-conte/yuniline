@@ -46,6 +46,7 @@
             max-width 100%
             flex-basis 100%
             padding-top 15px
+            max-height none
             
             
         
@@ -142,11 +143,15 @@
         justify-content left
         align-items start
         position relative
+        &:first-child
+            @media screen and (min-width: 300px) and (max-width: 588px)
+                height 120px
                     
         @media screen and (min-width: 300px) and (max-width: 588px)
             width 100%
             display block
             height auto
+            margin-bottom 25px
 
         
         &_title
@@ -265,6 +270,12 @@
             height 3px
             background colfirm
             bottom -8px
+            
+            
+    .footer__contacts--socials
+        @media screen and (min-width: 300px) and (max-width: 599px)
+            min-height 90px
+        
             
                 
             

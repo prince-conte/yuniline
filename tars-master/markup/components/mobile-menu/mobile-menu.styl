@@ -8,6 +8,15 @@
     z-index 999999
     background colbg
     border solid 60px coltxt
+    @media screen and (max-width: 1600px)
+        border solid 45px coltxt
+        
+    @media screen and (max-width: 1000px)
+        border solid 25px coltxt
+                
+    @media screen and (min-width: 300px) and (max-width: 600px)
+        border solid 6px coltxt
+        
     
     
                    
@@ -17,6 +26,10 @@
             padding-left 30px
             padding-right 30px
             font-size 14px
+            @media screen and (min-width: 300px) and (max-width: 600px)
+                font-size 12px
+                white-space nowrap
+                padding 10px
      
     
     &__body-menu
@@ -30,6 +43,21 @@
         align-items center
         padding 25px
         flex-wrap wrap
+        @media screen and (max-width: 1600px)
+            width 45%
+        @media screen and (max-width: 1000px)
+            width 100%
+            display block
+            padding-top 30px
+            overflow auto
+            border-top solid 75px colbg
+        @media screen and (min-width: 300px) and (max-width: 600px)
+            width 100%
+            display block
+            overflow auto
+            border-top solid 65px colbg
+            padding 10px 0
+
         
         
         &__ul
@@ -45,6 +73,13 @@
             m-speed(.4s)
             padding-right 35px
             border-right solid 6px coltxt
+            @media screen and (max-width: 1400px)
+                padding 5px 0
+                padding-right 30px
+            @media screen and (max-width: 1000px)
+                position relative
+                border-right solid 0px coltxt
+
             
             
             &_link
@@ -56,6 +91,29 @@
                 font-family fontblack
                 m-speed(.4s)
                 text-align right
+                @media screen and (max-width: 1600px)
+                    font-size 24px
+                    line-height 24px
+                
+                @media screen and (max-width: 1400px)
+                    font-size 20px
+                    line-height 20px
+                    
+                                    
+                @media screen and (max-width: 1000px)
+                    font-size 26px
+                    line-height 28px
+                    text-align left
+                    padding-left 45px
+                    
+                                                        
+                @media screen and (min-width: 300px) and (max-width: 600px)
+                    font-size 18px
+                    line-height 20px
+                    text-align left
+                    padding-left 15px
+                    
+                    
                 
         
                     
@@ -79,6 +137,30 @@
         height 100%
         m-speed(.4s)
         min-width 650px
+        @media screen and (max-width: 1600px)
+            min-width 450px
+        @media screen and (max-width: 1600px)
+            min-width 380px
+
+        @media screen and (max-width: 1000px)
+            min-width auto
+            max-width 100%
+            position relative
+            padding 25px 10px
+            padding-left 35px
+            left auto
+                 
+            
+        
+        @media screen and (min-width: 300px) and (max-width: 600px)
+            min-width auto
+            max-width 100%
+            position relative
+            padding 15px 5px
+            padding-left 10px
+            left auto
+                 
+            
         
             
         &__item
@@ -87,6 +169,10 @@
             text-transform uppercase
             &:hover
                 color colfirm
+            @media screen and (max-width: 1400px)
+                padding 5px
+                padding-left 30px
+               
                 
             a
                 font-size 30px
@@ -96,17 +182,42 @@
                 m-speed(.4s)
                 text-align left
                 white-space nowrap
+                @media screen and (max-width: 1600px)
+                    font-size 24px
+                    line-height 24px
+                
+                @media screen and (max-width: 1400px)
+                    font-size 20px
+                    line-height 20px
+                                
+                @media screen and (min-width: 300px) and (max-width: 600px)
+                    font-size 16px
+                    line-height 18px
+                
+        
+               
                 
         &__form
             display block
             padding-left 45px
             min-width 450px
+            @media screen and (max-width: 1000px)
+                min-width auto
+                max-width 100%
             
             label
                 display block
                 font-size 30px
                 font-family fontblack
                 margin 10px 0 20px
+                @media screen and (max-width: 1600px)
+                    font-size 24px
+                    
+                @media screen and (max-width: 1000px)
+                    font-size 22px
+                    
+                @media screen and (min-width: 300px) and (max-width: 600px)
+                    font-size 19px
                             
             input,
             textarea
@@ -119,10 +230,15 @@
                 margin 10px 0
                 width 100%
                 outline none
+                @media screen and (max-width: 1400px)
+                    padding 10px
+                    
                 
             textarea
                 resize none
                 height 150px
+                @media screen and (max-width: 1400px)
+                    height 100px
                 
                 
                     
@@ -143,6 +259,8 @@
                 width 100%
                 border solid 1px #939494
                 height 150px
+                @media screen and (max-width: 1600px)
+                    display none
                 
                 
             &_contact-title
@@ -151,6 +269,11 @@
                 font-family fontblack
                 text-transform uppercase
                 margin-top 20px
+                @media screen and (max-width: 1440px)
+                    font-size 16px
+                    
+                    
+                
                 
                        
             &_contact-link
@@ -188,6 +311,31 @@
             font-size 18px
             text-transform uppercase
             m-speed(.4s)
+            @media screen and (max-width: 1000px)
+                left -110px
+                top 4px
+            
+            
+        @media screen and (max-width: 1400px)
+            width 40px
+            height 40px
+
+                    
+        @media screen and (max-width: 1000px)
+            width 40px
+            height 40px
+            left auto
+            right 40px
+     
+                    
+        @media screen and (min-width: 300px) and (max-width: 600px)
+            width 40px
+            height 40px
+            left auto
+            right 20px
+            top 10px
+            
+        
             
         
         span
@@ -199,6 +347,10 @@
             background coltxt
             top 24px
             left 6px
+            @media screen and (max-width: 1400px)
+                height 4px
+                top 15px
+                left 4px
                   
         span:before
             content ''
@@ -210,6 +362,8 @@
             background coltxt
             top 0px
             left 0px
+            @media screen and (max-width: 1400px)
+                height 4px
             
             
             
@@ -242,6 +396,15 @@
         font-family fontblack
         margin 10px 0 20px
         width 100%
+        @media screen and (max-width: 1600px)
+            font-size 24px
+                    
+        @media screen and (max-width: 1000px)
+            font-size 22px
+                    
+        @media screen and (min-width: 300px) and (max-width: 600px)
+            font-size 19px
+                    
                 
             
             
@@ -254,12 +417,22 @@
         justify-content space-between
         flex-wrap wrap
         padding 0px 35px
+        @media screen and (max-width: 1000px)
+            display block
         
         &__item
             max-width 25%
             flex-basis 25%
             flex-direction column
             justify-content center
+            @media screen and (max-width: 1000px)
+                display inline-block
+                float left
+            @media screen and (min-width: 300px) and (max-width: 600px)
+                display inline-block
+                float left
+                max-width 50%
+            
             
         &__image
             max-width 80%
