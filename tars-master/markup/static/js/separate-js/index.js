@@ -1,8 +1,13 @@
 $(document).ready(function() {
+
+    
+centerSlider(); 
+    
+
     
 SocialShareKit.init();
 
-centerSlider()  
+
 
 slickBanner()
 
@@ -50,10 +55,7 @@ $("#closemenu_button").click(function() {
 openMenu()
 });
     
-     
-
-
-
+$(".page").addClass('fadein')
     
 });
 

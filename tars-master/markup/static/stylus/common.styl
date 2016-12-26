@@ -4,6 +4,7 @@ html, body
     height 100%
     margin 0
     padding 0
+    background colbg
 
 
 * {margin:0px; padding:0px; box-sizing: border-box}   
@@ -16,61 +17,26 @@ body
     overflow-x hidden
 
 
+@keyframes fadeBody {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
     
-.pace {
-  -webkit-pointer-events: none;
-  pointer-events: none;
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: colbg;
-  z-index: 9999999;
-}
-
-.pace-inactive
-    background transparent;
-
-.pace.pace-inactive .pace-progress {
-  display: none;
-  
-}
-
-.pace .pace-progress {
-  position: fixed;
-  z-index: 1000000000000000;
-  top: 0;
-  right: 0;
-  height: 5rem;
-  width: 5rem;
-
-  -webkit-transform: translate3d(0, 0, 0) !important;
-  -ms-transform: translate3d(0, 0, 0) !important;
-  transform: translate3d(0, 0, 0) !important;
-}
-
-.pace .pace-progress:after {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: .5rem;
-  content: attr(data-progress-text);
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: 100;
-  font-size: 5rem;
-  line-height: 1;
-  text-align: right;
-  color: colfirm;
-} 
     
     
     
     
 .page
-    // Стили для body
+    opacity 0
+    m-speed(.8s)
+
+    
+.fadein
+    animation: fadeBody 2s linear 1 forwards;
 
 section,
 header,
@@ -248,7 +214,7 @@ article
         padding-bottom 25px
         
         @media screen and (min-width: 300px) and (max-width: 588px)
-            font-size BASE_SIZE
+            font-size 15px
         
     .ssk-share-title
         display block
