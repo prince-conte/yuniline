@@ -9,11 +9,25 @@ SocialShareKit.init();
 
 
 
-slickBanner()
+slickBanner();
+    
+    
 
 $("#footer_smb").click(function() {
     
     $("#footer_smb_inp").trigger('click');
+});
+    
+    
+   
+$("#form-file-button").click(function() {
+    
+    $("#form-file-input").trigger('click');
+});
+    
+     
+$("#form-submit-button").click(function() {
+    $("#form-submit-input").trigger('click');
 });
     
     

@@ -1,0 +1,55 @@
+mixin formjobs(data)
+
+    .news-block
+
+        form
+    
+            .input-block
+                label
+                    span.obligatorily Имя
+                input(type="text" required)
+          
+            .input-block
+                label
+                    span.obligatorily Фамилия
+                input(type="text" required)
+                
+            .input-block
+                label
+                    span Отчество
+                input(type="text" )
+          
+            .input-block
+                label
+                    span.obligatorily Вакансия
+                input(type="text" required)
+                            
+            .input-block
+                label
+                    span Ссылка hh.ru
+                input(type="text" )
+          
+            .input-block
+                .button-block.align-left.doc
+                    .button#form-file-button
+                        
+                        span Добавить файл (doc, pdf)
+                    input.form_file#form-file-input(type="file" required)
+                        
+                            
+            .input-block.input-block--last
+                label
+                    span Комментарий
+                textarea
+                
+            .input-block.input-block--last
+                label
+                    span.obligatorily А не робот ли вы?
+                .form__submit__capcha
+                    div(class="g-recaptcha" data-sitekey="6LfEHhEUAAAAABw_ZPCye4biwgit5WwLq8zWYyqQ" data-callback="YourOnSubmitFn")
+            .button-block
+                .button#form-submit-button
+                    span Отправить резюме
+                input.form_file#form-submit-input(type="submit")
+
+                

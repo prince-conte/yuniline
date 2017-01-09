@@ -14,7 +14,6 @@ body
     font-size BASE_SIZE
     color FONT_COLOR
     line-height LINE_HEIGHT
-    overflow-x hidden
 
 
 @keyframes fadeBody {
@@ -63,7 +62,7 @@ ul
 
 .all-container
     background colbg
-    min-height 1200px
+    min-height 900px
     
 .content
     position relative
@@ -245,5 +244,127 @@ article
             background coltxt
     
     
+form
+    display flex
+    flex-wrap wrap
+    margin-top 35px
+    padding 10px
+    justify-content space-between
+    
+    
+    .button-block
+        margin-top 0px
+    
+    
+    .input-block
+        display flex
+        max-width 47%
+        flex-basis 47%
+        flex-wrap wrap
+        flex-direction column
+        margin-bottom 20px
+    
+                    
+        .doc
+            padding 0px
+            position relative
+            top 42px
+            .button
+                position relative
+                
+    .input-block--last
+        margin-top 30px
+            
+            
+
+
+        
+    input,
+    label
+        display inherit
+        padding 10px 20px
+        
+        
+    input,
+    textarea
+        border solid 1px #E6EAEA
+        font-size 17px
+        flex 0 0 auto
+        width 100%
+        outline none
+        resize none
+        padding 10px 20px
+        
+    textarea
+        height 150px
+        
+        
+    label
+        padding-bottom 15px
+        font-size 15px
+        padding-left 1px
+        position relative
+        display inline-flex
+        flex 0 0 auto
+        width auto
+        
+        
+    .obligatorily
+        display inline-block
+        position relative
+        
+        &:before
+            content '*';
+            position absolute
+            display block
+            top -13px
+            right -16px
+            color colfirm
+            font-size 28px
+            
+    .form_file
+        width 0px
+        height 0px
+        position absolute
+        top 0px
+        left 0px
+        visibility hidden
+        
+    .form__submit
+        display flex
+        max-width 100%
+        flex-basis 100%
+        flex-direction row
+        flex-wrap wrap
+        
+        label
+            flex-basis 100%
+            
+        input
+            width 100px
+            margin-right 15px
+            letter-spacing 7px
+        
+        &__capcha
+            display flex
+            flex-basis  170px
+            flex-wrap nowrap
+            flex-direction row
+            margin-right 15px
+            
+            &_item
+                display inline-block
+                width 25%
+                height auto
+                
+                img
+                    width 100%
+                    height auto
+                    display block
+                    position relative
+
+            
+      
+        
     
     
