@@ -39,17 +39,17 @@ html(class="no-js", lang="ru")
                         span /
                                                                     
                     .paginator__item
-                        a(href="#") Вакансии
+                        a(href="#") Издательство
                                                                   
                     .paginator__item
                         span /
                                                                     
                     .paginator__item
-                        a(href="#") Веб-разработчик
+                        a(href="#") Вакансии
                         
             .all-container
                 .content
-                    +jobsarticle()
+                    +jobsarticle(jobsarticle.categoryTrue)
                     .aside-sub-container
 
                     .aside-sub-container
@@ -68,7 +68,7 @@ html(class="no-js", lang="ru")
                             .jobspost__leftinfo_title Ищете вакансию или хотите к нам на стажировку?
                             .jobspost__leftinfo_description Пришлите нам свое резюме, мы с вами свяжемся при появлении подходящих вакансий
                             .button-block
-                                a.button 
+                                a.button(href="jobs-form.html")
                                     span Отправить резюме
      
 

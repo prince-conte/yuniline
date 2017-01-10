@@ -1,0 +1,58 @@
+.departments
+    display flex
+    flex-direction column
+    flex-wrap nowrap
+    margin-top 45px
+    padding-left 10px
+    
+    &__item
+        display flex
+        margin-bottom 100px
+        min-height 200px
+        flex-direction row
+        
+        &_image
+            max-width 100%
+            flex-basis 50%
+            height auto
+            
+            img
+                display block
+                width 100%
+                height auto
+                border-radius 5px
+                
+        &__content
+            display flex
+            flex-direction column
+            padding-left 25px
+            flex-basis 50%
+            
+            .button-block
+                padding 0px
+                margin-top 20px
+            
+            
+        &__country
+            display block
+            
+            &_flag
+                display inline-block
+                margin-right 20px
+                
+            &_title
+                font-family fontb
+                color coltxt
+                text-transform uppercase
+                font-size 12px
+                line-height 12px
+                position relative
+                top -7px
+                
+    &__two
+        .departments__item__content
+            padding-left 0px
+            padding-right 25px
+            
+        
+            

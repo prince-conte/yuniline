@@ -63,3 +63,24 @@ mixin category(data)
                 li.category-news__item
                     a(href="#") Отзывы о нас
 
+
+    if data.categoryDepartments
+        .category-news
+            .category-news__active-category 
+                .category-news__active-category_title Издательство: <h1 class="active">Представительства</h1>
+            
+            
+            ul.category-news__grid
+        
+                li.category-news__item
+                    a(href="#") История
+                
+                li.category-news__item
+                    a(href="#") Представительства
+                 
+                li.category-news__item
+                    a(href="#") Вакансии
+                 
+                li.category-news__item
+                    a(href="#") Отзывы о нас
+

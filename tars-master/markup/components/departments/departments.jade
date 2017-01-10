@@ -1,0 +1,69 @@
+include /category/category
+mixin departments(data)
+
+    .news-block
+    
+    
+        if data.useCategory
+            +category(category.departments)
+       
+    
+        .departments
+    
+            .departments__item
+                .departments__item_image
+                    img.box-shadow-one(src="static/img/general/smolensk.jpg" alt="ЮНИЛАЙН Смоленск")
+                .departments__item__content
+                    .departments__item__country
+                        img.departments__item__country_flag(src="static/img/general/russia.png" alt="ЮНИЛАЙН Россия")
+                        span.departments__item__country_title Российская Федерация
+                        .news-block__anons-article_title Cмоленск
+                        .footer_description TransferWise’s Smolensk office is located in 24th street within walking distance of the Madison Square Park. Here you’ll find a full slice of TransferWise, building the new world of money. 
+                        
+                        .button-block.align-left
+                            a.button
+                                span подробнее
+    
+            .departments__item.departments__two
+                .departments__item__content
+                    .departments__item__country
+                        img.departments__item__country_flag(src="static/img/general/belarus.png" alt="ЮНИЛАЙН Беларусь")
+                        span.departments__item__country_title Республика Беларусь
+                        .news-block__anons-article_title Минск
+                        .footer_description TransferWise’s Minsk office is located in 24th street within walking distance of the Madison Square Park. Here you’ll find a full slice of TransferWise, building the new world of money. 
+                        
+                        .button-block.align-left
+                            a.button
+                                span подробнее
+                .departments__item_image
+                    img.box-shadow-one(src="static/img/general/minsk.jpg" alt="ЮНИЛАЙН Алмаата")
+
+
+            .departments__item
+                .departments__item_image
+                    img.box-shadow-one(src="static/img/general/almaaty.jpg" alt="ЮНИЛАЙН Алмаата")
+                .departments__item__content
+                    .departments__item__country
+                        img.departments__item__country_flag(src="static/img/general/kazakhstan.png" alt="ЮНИЛАЙН Казахстан")
+                        span.departments__item__country_title Казахстан
+                        .news-block__anons-article_title Алматы
+                        .footer_description TransferWise’s Smolensk office is located in 24th street within walking distance of the Madison Square Park. Here you’ll find a full slice of TransferWise, building the new world of money. 
+                        
+                        .button-block.align-left
+                            a.button
+                                span подробнее
+    
+    
+            .departments__item.departments__two
+                .departments__item__content
+                    .departments__item__country
+                        img.departments__item__country_flag(src="static/img/general/estonia.png" alt="ЮНИЛАЙН европа")
+                        span.departments__item__country_title Эстония
+                        .news-block__anons-article_title Таллин
+                        .footer_description TransferWise’s Tallin office is located in 24th street within walking distance of the Madison Square Park. Here you’ll find a full slice of TransferWise, building the new world of money. 
+                        
+                        .button-block.align-left
+                            a.button
+                                span подробнее
+                .departments__item_image
+                    img.box-shadow-one(src="static/img/general/tallin.jpg" alt="ЮНИЛАЙН Таллин")

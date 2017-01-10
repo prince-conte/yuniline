@@ -1,8 +1,12 @@
+include /category/category
 mixin jobsarticle(data)
-
-
+     
     .news-block
 
+    
+        if data.useCategory
+            +category(category.jobs)
+       
         article.news-block__anons-article.news-block__anons-article-big
             .news-block__anons-article__content
                 h1.news-block__anons-article_title backend web-разработчик
@@ -52,7 +56,7 @@ mixin jobsarticle(data)
                 li заработная плата по результатам собеседования.
                 
             .button-block.align-left
-                a.button
+                a.button(href="jobs-form.html")
                     span Отправить резюме
  
             .ssk-share-title Поделиться:
