@@ -1,0 +1,101 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head
+        script(src='https://www.google.com/recaptcha/api.js')
+    include ../components/header/header
+    include ../components/nav/nav
+    include ../components/all-container/all-container
+    include ../components/footer/footer
+    include ../components/mobile-menu/mobile-menu    
+    
+    include ../components/newsblock/newsblock
+    include ../components/aside-sub-container/aside-sub-container
+    include ../components/statickinfo/statickinfo
+    include ../components/departmentsmap/departmentsmap
+    include ../components/departmentsarticle/departmentsarticle
+    
+    
+    
+    //include ../components/footer/footer 
+
+    
+    
+
+    head
+        +head(head.news)
+    body.page
+        |%=symbols=%
+
+        +header()
+        
+        .page__wrapper
+            +nav()
+            +departmentsmap()
+            .paginator
+                .content
+                    
+                    .paginator__item
+                        a(href="#") Главная
+                                            
+                    .paginator__item
+                        span /
+                                                                    
+                    .paginator__item
+                        a(href="#") Издательство
+                                                                   
+                    .paginator__item
+                        span /
+                                                                    
+                    .paginator__item
+                        a(href="#") Представительства
+                                                                                 
+                    .paginator__item
+                        span /
+                                                                    
+                    .paginator__item
+                        a(href="#") Тарту
+                        
+            .all-container
+                .content
+                    +departmentsarticle()
+
+                    .aside-sub-container
+ 
+                    
+                        .statickinfo__photo
+                            img(src="static/img/general/ava1.jpg") 
+                            .statickinfo_title Веремьев Юрий Николаевич
+                            
+                            
+
+                        .jobspost__leftinfo.sticky-block
+                            .jobspost__leftinfo_title Не нашли нужной информации?
+                            .jobspost__leftinfo_description Воспользуйтесь формой обратной связи
+                            .button-block
+                                a.button 
+                                    span Задать вопрос
+
+
+            +footer()
+        +mobile-menu()
+            
+            //+header()
+            
+
+            //- Include your components here
+            //- +example()
+
+            //+footer()
+        
+        script(src='%=static=%js/main%=hash=%%=min=%.js')
+        script(type="text/javascript" src="https://maps.googleapis.com/maps/api/js")
+        script(src='%=static=%js/separate-js/index%=hash=%%=min=%.js')
+        script(src='%=static=%js/separate-js/mapoptions%=hash=%%=min=%.js')
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/separate-js/jquery.smoothscroll%=hash=%%=min=%.js'  defer)
+        
+
+        

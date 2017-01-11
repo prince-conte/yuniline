@@ -1,0 +1,86 @@
+mixin departmentscontact(data)
+
+    .departmentscontact
+        h2.departmentscontact_title Контакты представительства
+        
+        .departmentscontact__body
+            .departmentscontact__body__content
+                .departmentscontact__body__general-contacts
+                    span.departmentscontact__body__general-contacts_adress Rüütli 9, 51007 Tartu, Эстония
+                    
+                    a.departmentscontact__body__general-contacts_phone Телефон:
+                        span 8 (4812) 358-777
+                                        
+                    a.departmentscontact__body__general-contacts_phone E-mail:
+                        span total@yuniline.ru
+                        
+                .departmentscontact__body__individual-contacts
+                
+                    .departmentscontact__body__individual-contacts_title Адрес для корреспонденции:
+            
+                    a.departmentscontact__body__general-contacts_phone Телефон:
+                        span 8 (4812) 358-777   
+                                
+                    a.departmentscontact__body__general-contacts_phone E-mail:
+                        span reklama@yuniline.ru
+                                  
+                                               
+                .departmentscontact__body__individual-contacts
+                
+                    .departmentscontact__body__individual-contacts_title Для рекламодателей:
+            
+                    a.departmentscontact__body__general-contacts_phone Телефон:
+                        span 8 (4812) 358-777   
+                                
+                    a.departmentscontact__body__general-contacts_phone E-mail:
+                        span reklama@yuniline.ru
+                                                              
+                                               
+                .departmentscontact__body__individual-contacts
+                
+                    .departmentscontact__body__individual-contacts_title Работа и стажировка:
+            
+                    a.departmentscontact__body__general-contacts_phone Телефон:
+                        span 8 (4812) 358-777   
+                                
+                    a.departmentscontact__body__general-contacts_phone E-mail:
+                        span reklama@yuniline.ru
+                                                      
+                                  
+                                  
+            .departmentscontact__body__feedback 
+
+
+                form.form
+    
+                    .input-block
+                        label
+                            span.obligatorily Имя
+                        input(type="text" required)
+          
+                    .input-block
+                        label
+                            span.obligatorily Фамилия
+                        input(type="text" required)
+          
+                    .input-block
+                        label
+                            span.obligatorily E-mail
+                        input(type="email" required)
+
+                    .input-block.input-block--last
+                        label
+                            span Комментарий
+                        textarea
+                
+                    .input-block.input-block--last
+                        label
+                            span.obligatorily А не робот ли вы?
+                        .form__submit__capcha
+                            div(class="g-recaptcha" data-sitekey="6LfEHhEUAAAAABw_ZPCye4biwgit5WwLq8zWYyqQ" data-callback="YourOnSubmitFn")
+                    .button-block
+                        .button#form-submit-button
+                            span Отправить
+                        input.form_file#form-submit-input(type="submit")
+
+                
