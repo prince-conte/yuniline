@@ -20,24 +20,24 @@ html(class="no-js", lang="ru")
 
     head
         +head(head.defaults)
-    body
+    body.page
         |%=symbols=%
-        .page
+        
 
-            +header()
-            .page__wrapper
-                +nav()
+        +header()
+        .page__wrapper
+            +nav()
+            .all-container
                 +center-slider()
-                .all-container
-                    .content
-                        +newsblock(newsblock.categoryFalse)
-                        .aside-sub-container
-                            +populararticleblock(populararticleblock.article)
-                            +banner()
-                +footer()
-            +mobile-menu()
-            div#hellopreloader
-                div#hellopreloader_preload
+                .content
+                    +newsblock(newsblock.categoryFalse)
+                    .aside-sub-container
+                        +populararticleblock(populararticleblock.article)
+                        +banner()
+            +footer()
+        +mobile-menu()
+        div#hellopreloader
+            div#hellopreloader_preload
             
                 //+header()
             
@@ -57,5 +57,6 @@ html(class="no-js", lang="ru")
         //- Main scripts. You can replace it, but I recommend you to leave it here
         script(src='%=static=%js/separate-js/jquery.smoothscroll%=hash=%%=min=%.js'  defer)
         script(src='%=static=%js/main%=hash=%%=min=%.js')
+
 
         

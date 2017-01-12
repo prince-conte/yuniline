@@ -69,7 +69,11 @@ $("#closemenu_button").click(function() {
 openMenu()
 });
     
-$(".page").addClass('fadein')
+$(".page").addClass('fadein');
+    
+    
+    
+
     
 });
 
