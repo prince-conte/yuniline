@@ -14,6 +14,8 @@ html(class="no-js", lang="ru")
     include ../components/statickinfo/statickinfo
     include ../components/magazineimage/magazineimage
     include ../components/magazinecontent/magazinecontent
+    include ../components/magazinemenu/magazinemenu
+    include ../components/magazinecontacts/magazinecontacts
     
     
     
@@ -55,22 +57,11 @@ html(class="no-js", lang="ru")
                 .content
                     +magazinecontent()
 
-                    .aside-sub-container
+                    .aside-sub-container.aside-sub-container--magazine
+                        +magazinemenu()
+                        +magazinecontacts()
+                        
  
-                    
-                        .statickinfo__photo
-                            img(src="static/img/general/ava1.jpg") 
-                            .statickinfo_title Веремьев Юрий Николаевич
-                            
-                            
-
-                        .jobspost__leftinfo.sticky-block
-                            .jobspost__leftinfo_title Не нашли нужной информации?
-                            .jobspost__leftinfo_description Воспользуйтесь формой обратной связи
-                            .button-block
-                                a.button 
-                                    span Задать вопрос
-
 
             +footer()
         +mobile-menu()

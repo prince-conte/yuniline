@@ -1,0 +1,56 @@
+.magazinemenu
+    display flex
+    flex-direction column
+    flex-basis 100%
+    max-width 100%
+    margin 0px 0px 20px
+    min-height 300px
+    margin-bottom 30px
+    m-speed(.1s)
+    
+    &__item
+        padding 10px 0
+        m-speed(.4s)
+        &:last-child
+            border-bottom solid 3px coltxt 
+            padding-bottom 25px
+        
+        &:hover
+            .magazinemenu__item_link
+                color colfirm
+                &:before
+                    display block
+                    
+                    
+                    
+                
+        &--active
+            .magazinemenu__item_link
+                color colfirm
+                font-family fontb
+                &:before
+                    display block
+                              
+        
+        &_link
+            color coltxt
+            font-size 18px
+            line-height 20px
+            m-speed(.1s)
+            position relative
+            display inline-block
+            &:before
+                content '/'
+                position absolute
+                display none
+                left -20px
+                top 0px
+                font-size 16px
+                color colfirm
+                         
+        
+    
+        
+        
+        
+    
