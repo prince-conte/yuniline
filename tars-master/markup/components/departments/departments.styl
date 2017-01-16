@@ -4,17 +4,25 @@
     flex-wrap nowrap
     margin-top 45px
     padding-left 10px
+    @media screen and (max-width: 600px) 
+        padding 0 10px
     
     &__item
         display flex
         margin-bottom 100px
         min-height 200px
         flex-direction row
+        @media screen and (max-width: 600px) 
+            flex-direction column
+            margin-bottom 50px
+            .departments__item_image
+                display none
         
         &_image
             max-width 100%
             flex-basis 50%
             height auto
+            
             
             img
                 display block
@@ -22,11 +30,18 @@
                 height auto
                 border-radius 5px
                 
+            @media screen and (max-width: 600px) 
+                flex-basis 100%
+                margin-bottom 20px
+                
         &__content
             display flex
             flex-direction column
             padding-left 25px
             flex-basis 50%
+            @media screen and (max-width: 600px) 
+                
+                padding-left 0px
             
             .button-block
                 padding 0px
@@ -53,6 +68,9 @@
         .departments__item__content
             padding-left 0px
             padding-right 25px
+            @media screen and (max-width: 600px) 
+                padding-right 0px
+                margin-bottom 20px
             
         
             
