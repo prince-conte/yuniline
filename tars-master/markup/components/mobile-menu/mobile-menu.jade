@@ -232,15 +232,23 @@ mixin mobile-menu (data)
                     
                                 
                     .mobile-menu__sub-menu
-                        form.mobile-menu__sub-menu__form
-                            label Задать вопрос
-                            input(placeholder="Ваше имя")
-                            input(placeholder="e-mail")
-                            input(placeholder="Номер телефона")
-                            textarea(placeholder="Текст сообщения")
+                        form.form--no-m.mobile-menu__sub-menu__form
+                            label.form--no-m Задать вопрос
+                            input(placeholder="Ваше имя" required)
+                            input(placeholder="e-mail" required)
+                            input(placeholder="Номер телефона" required)
+                            textarea(placeholder="Текст сообщения" required)
+                                                
+                            ul.error-block
+                                li.error-block_item У вас странное имя!
+                                li.error-block_item Добавить резюме надо обязательно!
+                                li.error-block_item.error-block_item--ok Ваше сообщение отправлено!
+                
                             .button-block
-                                a.button 
-                                    span Поиск
+                                .button#form-submit-mobile-button
+                                    span Отправить сообщение
+                                input.form_file#form-submit-mobile-input(type="submit")
+
                              
         
                 li.mobile-menu__body-menu__item#sub-menu-11

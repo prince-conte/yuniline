@@ -48,6 +48,15 @@ mixin formjobs(data)
                     span.obligatorily А не робот ли вы?
                 .form__submit__capcha
                     div(class="g-recaptcha" data-sitekey="6LfEHhEUAAAAABw_ZPCye4biwgit5WwLq8zWYyqQ" data-callback="YourOnSubmitFn")
+                    
+                    
+            ul.error-block
+                li.error-block_item У вас странное имя!
+                li.error-block_item Добавить резюме надо обязательно!
+                li.error-block_item.error-block_item--ok Ваше сообщение отправлено!
+                
+            
+            
             .button-block
                 .button#form-submit-button
                     span Отправить резюме

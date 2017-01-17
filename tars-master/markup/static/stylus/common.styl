@@ -254,19 +254,57 @@ article
     margin-top 35px
     padding 10px
     justify-content space-between
+    &--no-m
+        margin 0px
+        
+    @media screen and (max-width: 760px)
+        display block
+        padding 0
     
     
     .button-block
         margin-top 0px
+        
+        @media screen and (max-width: 760px)
+            display block
+            text-align center
+        
+    .error-block
+        display flex
+        max-width 80%
+        flex-basis 80%
+        flex-wrap wrap
+        flex-direction column   
+        margin-bottom 20px
+        background #f9f9f9
+        border solid 1px #e6eaea
+        border-radius 5px
+        padding 10px
+        
+        &_item
+            color colfirm
+            text-align left
+            font-size 12px
+            line-height 12px
+            font-family fontb
+            padding 5px 0
+            
+            &--ok
+                color green
+            
     
     
     .input-block
         display flex
-        max-width 47%
+        max-width 100%
         flex-basis 47%
         flex-wrap wrap
         flex-direction column
         margin-bottom 20px
+        
+        @media screen and (max-width: 760px)
+            flex-basis 100%
+            
     
                     
         .doc
@@ -325,21 +363,14 @@ article
             right -16px
             color colfirm
             font-size 28px
-            
-    .form_file
-        width 0px
-        height 0px
-        position absolute
-        top 0px
-        left 0px
-        opacity 0
-        
+
     .form__submit
         display flex
         max-width 100%
         flex-basis 100%
         flex-direction row
         flex-wrap wrap
+
         
         label
             flex-basis 100%
@@ -355,6 +386,10 @@ article
             flex-wrap nowrap
             flex-direction row
             margin-right 15px
+            max-height: 80px;
+            @media screen and (max-width: 400px)
+                margin-left -10px
+                
             
             &_item
                 display inline-block
@@ -368,7 +403,39 @@ article
                     position relative
 
             
-      
+            
+.form_file
+    width 0px
+    height 0px
+    position absolute
+    top 0px
+    left 0px
+    opacity 0
         
+        
+        
+.error-block
+    display flex
+    max-width 80%
+    flex-basis 80%
+    flex-wrap wrap
+    flex-direction column   
+    margin-bottom 20px
+    background #f9f9f9
+    border solid 1px #e6eaea
+    border-radius 5px
+    padding 10px
+        
+    &_item
+        color colfirm
+        text-align left
+        font-size 12px
+        line-height 12px
+        font-family fontb
+        padding 5px 0
+            
+        &--ok
+            color green
+            
     
     
