@@ -1,5 +1,6 @@
 .magazine-content
     margin-top 35px
+    min-height 1250px
     
     &_title
         margin-top 45px
@@ -11,6 +12,41 @@
             text-transform uppercase
             padding 10px 0 10px 15px
             border-bottom solid 1px #e6eaea
+            position relative
             &:before
-                display none
+                content '-'
+                display block
+                position absolute
+                display block
+                left 0px
+                top 10px
+                background transparent
+                
+            b
+                margin-right 10px
+                
+            a
+                color colfirm
+                
+            @media screen and (max-width: 600px)
+                font-size 13px
+                &:before
+                    top 10px
+                    
+    
+    &_note-desc
+        padding 30px 20px 20px
+        font-size 15px
+        position relative
+        margin-top 10px
+        &:before
+            content '*'
+            position absolute
+            display block
+            left 0px
+            top 0px
+            font-size 36px
+            color colfirm
+            
+            
         

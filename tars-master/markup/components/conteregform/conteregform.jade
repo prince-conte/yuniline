@@ -1,0 +1,112 @@
+mixin conteregform(data)
+
+
+    .news-block
+        article.magazine-content
+        
+            h1 Зарегистрируйтесь для участия в конкурсе от издательства «ЮНИЛАЙН»
+            
+            p В данном разделе вы можете пройти онлайн-регистрацию для участия в одном из наших конкурсов не выходя из дома. Нужно всего лишь заполнить анкету участника и прислать квитанцию об оплате в электронном виде, фотографию или её копию.
+            p Заполните форму регистрации. Следуйте условиям конкурса – и получите шанс выиграть ценный приз!
+            
+            h2 Выберите конкурс для участия:
+            
+            .conteregform
+    
+                a.news-block__anons-article.news-block__anons-article--conteregform.news-block__anons-article--conteregform-active
+                    .news-block__anons-article__image-box
+                        img(src="static/img/general/ded.jpg")
+                    .news-block__anons-article__content
+                        .news-block__anons-article_tag Журнал 3/9 царство
+                        .news-block__anons-article_title КОНКУРС ОТ ДЕДА МОРОЗА НА СТАРЫЙ НОВЫЙ ГОД! 
+                        .news-block__anons-article_date Подведение итогов: 06-12-2016
+
+
+                a.news-block__anons-article.news-block__anons-article--conteregform
+                    .news-block__anons-article__image-box
+                        img(src="static/img/general/ded.jpg")
+                    .news-block__anons-article__content
+                        .news-block__anons-article_tag Журнал 3/9 царство
+                        .news-block__anons-article_title КОНКУРС ОТ ДЕДА МОРОЗА НА СТАРЫЙ НОВЫЙ ГОД! 
+                        .news-block__anons-article_date Подведение итогов: 06-12-2016
+
+
+                a.news-block__anons-article.news-block__anons-article--conteregform
+                    .news-block__anons-article__image-box
+                        img(src="static/img/general/ded.jpg")
+                    .news-block__anons-article__content
+                        .news-block__anons-article_tag Журнал 3/9 царство
+                        .news-block__anons-article_title КОНКУРС ОТ ДЕДА МОРОЗА НА СТАРЫЙ НОВЫЙ ГОД! 
+                        .news-block__anons-article_date Подведение итогов: 06-12-2016
+    
+    
+                a.news-block__anons-article.news-block__anons-article--conteregform
+                    .news-block__anons-article__image-box
+                        img(src="static/img/general/ded.jpg")
+                    .news-block__anons-article__content
+                        .news-block__anons-article_tag Журнал 3/9 царство
+                        .news-block__anons-article_title КОНКУРС ОТ ДЕДА МОРОЗА НА СТАРЫЙ НОВЫЙ ГОД! 
+                        .news-block__anons-article_date Подведение итогов: 06-12-2016
+            
+    
+
+        form.form
+    
+            .input-block
+                label
+                    span.obligatorily Имя
+                input(type="text" required)
+          
+            .input-block
+                label
+                    span.obligatorily Фамилия
+                input(type="text" required)
+                
+            .input-block
+                label
+                    span Отчество
+                input(type="text")
+          
+            .input-block
+                label
+                    span.obligatorily Вакансия
+                input(type="text" required)
+                            
+            .input-block
+                label
+                    span Ссылка hh.ru
+                input(type="text" )
+          
+            .input-block
+                .button-block.align-left.doc
+                    .button#form-file-button
+                        
+                        span Добавить файл (doc, pdf)
+                    input.form_file#form-file-input(type="file" required)
+                        
+                            
+            .input-block.input-block--last
+                label
+                    span Комментарий
+                textarea
+                
+            .input-block.input-block--last
+                label
+                    span.obligatorily А не робот ли вы?
+                .form__submit__capcha
+                    div(class="g-recaptcha" data-sitekey="6LfEHhEUAAAAABw_ZPCye4biwgit5WwLq8zWYyqQ" data-callback="YourOnSubmitFn")
+                    
+                    
+            ul.error-block
+                li.error-block_item У вас странное имя!
+                li.error-block_item Добавить резюме надо обязательно!
+                li.error-block_item.error-block_item--ok Ваше сообщение отправлено!
+                
+            
+            
+            .button-block
+                .button#form-submit-button
+                    span Отправить резюме
+                input.form_file#form-submit-input(type="submit")
+
+                

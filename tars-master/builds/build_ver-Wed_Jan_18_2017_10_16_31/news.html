@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+    <!--include ../components/footer/footer -->
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ЮНИЛАЙН НОВОСТИ</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <meta property="og:title" content="ЮНИЛАЙН НОВОСТИ">
+        <meta property="og:title" content="">
+        <meta property="og:url" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="500">
+        <meta property="og:image:height" content="300">
+        <meta property="twitter:description" content="">
+        <link rel="image_src" href="">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    </head>
+
+    <body class="page">
+        <header class="header">
+            <a id="openmenu_button" class="header__boxmenu">
+                <div class="header__burger"><span></span>
+                </div>
+            </a>
+            <div class="header__container">
+                <div class="header__social">
+                    <a href="#" class="vkontakte-ico"></a>
+                    <a href="#" class="facebook-ico"></a>
+                    <a href="#" class="odnoklassniki-ico"></a>
+                </div>
+                <form class="header__serch-block">
+                    <input placeholder="поиск по сайту">
+                    <a class="header__serch-block_go"></a>
+                </form>
+                <a href="index.html" class="header__logo-block">
+                    <img src="static/img/general/logo.svg">
+                </a>
+                <div class="header__region"><b>Ваш регион:</b>
+                    <div id="header_region_popup" class="header__region_active">Нижний Новгород</div>
+                    <div id="header_region_sub" class="header__region__sub">
+                        <ul class="header__region__sub-body">
+                            <li class="header__region__item"><a class="header__region__item_stadt">Москва</a>
+                            </li>
+                            <li class="header__region__item"><a class="header__region__item_stadt">Смоленск</a>
+                            </li>
+                            <li class="header__region__item"><a class="header__region__item_stadt">Калининград</a>
+                            </li>
+                            <li class="header__region__item"><a class="header__region__item_stadt">Санкт-Петербург</a>
+                            </li>
+                            <li class="header__region__item"><a class="header__region__item_stadt">Воронеж</a>
+                            </li>
+                            <li class="header__region__item"><a class="header__region__item_stadt">Минск</a>
+                            </li>
+                            <li class="header__region__item"><a class="header__region__item_stadt">Курск</a>
+                            </li>
+                            <li class="header__region__item"><a class="header__region__item_stadt">Соликамск</a>
+                            </li>
+                            <li class="header__region__item"><a class="header__region__item_stadt">Удмурия</a>
+                            </li>
+                            <li class="header__region__item"><a class="header__region__item_stadt">Калининград</a>
+                            </li>
+                            <li class="header__region__item"><a class="header__region__item_stadt">Санкт-Петербург</a>
+                            </li>
+                            <li class="header__region__item"><a class="header__region__item_stadt">Северная осетия</a>
+                            </li>
+                            <li class="header__region__item"><a class="header__region__item_stadt">н-й Ноовгород</a>
+                            </li>
+                            <li class="header__region__item"><a class="header__region__item_stadt">Ростов на дону</a>
+                            </li>
+                            <li class="header__region__item"><a class="header__region__item_stadt">Гусь Хрустальный</a>
+                            </li>
+                            <li class="button-block"><a class="button"><span>Перейти к поиску своего региона</span></a>
+                            </li>
+                            <li id="header_region_close" class="header__region_close"><span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__shop-and-login"> <a class="header__in-shop"><span>магазин юнилайн</span></a><a id="header_login_popup" class="header__login"><span><b>войти /</br> зарегистрироваться</b></span></a>
+                    <div id="header_login_sub" class="header__loginin-block">
+                        <form class="header__loginin-block__body">
+                            <input type="text" placeholder="Логин" class="header__loginin-block_input-txt">
+                            <input type="password" placeholder="Пароль" class="header__loginin-block_input-txt">
+                            <div class="button-block"><a class="button"><span>Войти</span></a><a class="button"><span>Регистрация</span></a>
+                            </div><a id="header_login_close" class="header__region_close"><span></span></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="page__wrapper">
+            <nav class="nav">
+                <div class="content">
+                    <ul class="nav__topmenu">
+                        <li class="nav__topmenu__item"><a href="#">Издательство</a>
+                            <ul class="nav__sub-menu">
+                                <li class="nav__sub-menu_item"><a href="isdatelstvo-history.html">История</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a href="departmentspage.html">Представительства</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a href="departmentspage.html">Отзывы о нас</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a href="#">Информационные материалы</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a href="jobs.html">Вакансии</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__topmenu__item"><a href="news.html">Новости</a>
+                            <ul class="nav__sub-menu">
+                                <li class="nav__sub-menu_item"><a>Все новости</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a>События</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a>Конкурсы     </a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a>Акции</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__topmenu__item"><a href="#">Онлайн подписка</a>
+                            <div class="nav__sub-menu">
+                                <ul class="nav__sub-subscribe">
+                                    <li class="nav__sub-subscribe_magazine">
+                                        <a href="#">
+                                            <img src="static/img/general/jornals.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="nav__sub-subscribe_magazine">
+                                        <a href="#">
+                                            <img src="static/img/general/jornals.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="nav__sub-subscribe_magazine">
+                                        <a href="#">
+                                            <img src="static/img/general/jornals.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="nav__sub-subscribe_magazine">
+                                        <a href="#">
+                                            <img src="static/img/general/jornals.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="nav__sub-subscribe_magazine">
+                                        <a href="#">
+                                            <img src="static/img/general/jornals.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="nav__sub-subscribe_magazine">
+                                        <a href="#">
+                                            <img src="static/img/general/jornals.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="nav__sub-subscribe_magazine">
+                                        <a href="#">
+                                            <img src="static/img/general/jornals.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="nav__sub-subscribe_magazine">
+                                        <a href="#">
+                                            <img src="static/img/general/jornals.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="button-block">
+                                    <a class="button"> <span>Все издания</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__topmenu__item"><a href="#">Наши издания</a>
+                            <ul class="nav__sub-menu">
+                                <li class="nav__sub-menu_item"><a>Все издания</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a>Онлайн подписка</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__topmenu__item"><a href="#">Сотрудничество</a>
+                            <ul class="nav__sub-menu">
+                                <li class="nav__sub-menu_item"><a>Авторам</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a>Рекламодателям</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a>Распространителям</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a>Медиакиты</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__topmenu__item"><a href="#">Конкурсы</a>
+                            <ul class="nav__sub-menu">
+                                <li class="nav__sub-menu_item"><a>Все конкурсы</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a>Онлайн регистрация в конкурсах</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a>Правила участия в конкурсах</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__topmenu__item"><a href="#">Магазин</a>
+                            <ul class="nav__sub-menu">
+                                <li class="nav__sub-menu_item"><a>Подписка</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a>Прошлые номера</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a>Сувенирная продукция</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a>Корзина</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a>Оплата и доставка</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__topmenu__item"><a href="#">Контакты</a>
+                            <ul class="nav__sub-menu">
+                                <li class="nav__sub-menu_item"><a>Наши контакты</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a>Адреса представительств</a>
+                                </li>
+                                <li class="nav__sub-menu_item"><a>Обратная связь</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="paginator">
+                <div class="content">
+                    <div class="paginator__item"><a href="#">Главная</a>
+                    </div>
+                    <div class="paginator__item"><span>/</span>
+                    </div>
+                    <div class="paginator__item"><a href="#">Новости</a>
+                    </div>
+                </div>
+            </div>
+            <div class="all-container">
+                <div class="content">
+                    <div class="news-block">
+                        <div class="category-news">
+                            <div class="category-news__active-category">
+                                <div class="category-news__active-category_title">Категория:
+                                    <h1 class="active">Все новости</h1>
+                                </div>
+                            </div>
+                            <ul class="category-news__grid">
+                                <li class="category-news__item"><a>Новости</a>
+                                </li>
+                                <li class="category-news__item"><a>События</a>
+                                </li>
+                                <li class="category-news__item"><a>Конкурсы</a>
+                                </li>
+                                <li class="category-news__item"><a>Все новости</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="news-post.html" class="news-block__anons-article news-block__anons-article-big">
+                            <div class="news-block__anons-article__content">
+                                <div class="news-block__anons-article_tag">новости</div>
+                                <div class="news-block__anons-article_title">Вступление в Ассоциацию распространителей печатной продукции</div>
+                                <div class="news-block__anons-article_date">Дата публикации: 06-12-2016</div>
+                            </div>
+                            <div class="news-block__anons-article__image-box">
+                                <img src="static/img/general/deti.jpg">
+                            </div>
+                        </a>
+                        <a class="news-block__anons-article">
+                            <div class="news-block__anons-article__image-box">
+                                <img src="static/img/general/news2.jpg">
+                            </div>
+                            <div class="news-block__anons-article__content">
+                                <div class="news-block__anons-article_tag">новости</div>
+                                <div class="news-block__anons-article_title">Вступление в Ассоциацию распространителей печатной продукции</div>
+                                <div class="news-block__anons-article_date">Дата публикации: 06-12-2016</div>
+                            </div>
+                        </a>
+                        <a class="news-block__anons-article">
+                            <div class="news-block__anons-article__image-box">
+                                <img src="static/img/general/news.jpg">
+                            </div>
+                            <div class="news-block__anons-article__content">
+                                <div class="news-block__anons-article_tag">конкурсы</div>
+                                <div class="news-block__anons-article_title">Розыгрыш призов от НЕПОСЕДЫ - выиграй 1 из 77 призов!</div>
+                                <div class="news-block__anons-article_date">Дата публикации: 06-12-2016</div>
+                            </div>
+                        </a>
+                        <a class="news-block__anons-article news-block__anons-article-big">
+                            <div class="news-block__anons-article__content">
+                                <div class="news-block__anons-article_tag">события</div>
+                                <div class="news-block__anons-article_title">Издательству «ЮНИЛАЙН» исполнилось 6 лет!</div>
+                                <div class="news-block__anons-article_date">Дата публикации: 06-12-2016</div>
+                            </div>
+                            <div class="news-block__anons-article__image-box">
+                                <img src="static/img/general/6let.jpg">
+                            </div>
+                        </a>
+                        <a class="news-block__anons-article news-block__anons-article-big">
+                            <div class="news-block__anons-article__content">
+                                <div class="news-block__anons-article_tag">новости</div>
+                                <div class="news-block__anons-article_title">Вступление в Ассоциацию распространителей печатной продукции</div>
+                                <div class="news-block__anons-article_date">Дата публикации: 06-12-2016</div>
+                            </div>
+                            <div class="news-block__anons-article__image-box">
+                                <img src="static/img/general/deti.jpg">
+                            </div>
+                        </a>
+                        <a class="news-block__anons-article">
+                            <div class="news-block__anons-article__image-box">
+                                <img src="static/img/general/news2.jpg">
+                            </div>
+                            <div class="news-block__anons-article__content">
+                                <div class="news-block__anons-article_tag">новости</div>
+                                <div class="news-block__anons-article_title">Вступление в Ассоциацию распространителей печатной продукции</div>
+                                <div class="news-block__anons-article_date">Дата публикации: 06-12-2016</div>
+                            </div>
+                        </a>
+                        <a class="news-block__anons-article">
+                            <div class="news-block__anons-article__image-box">
+                                <img src="static/img/general/news.jpg">
+                            </div>
+                            <div class="news-block__anons-article__content">
+                                <div class="news-block__anons-article_tag">конкурсы</div>
+                                <div class="news-block__anons-article_title">Розыгрыш призов от НЕПОСЕДЫ - выиграй 1 из 77 призов!</div>
+                                <div class="news-block__anons-article_date">Дата публикации: 06-12-2016</div>
+                            </div>
+                        </a>
+                        <a class="news-block__anons-article news-block__anons-article-big">
+                            <div class="news-block__anons-article__content">
+                                <div class="news-block__anons-article_tag">события</div>
+                                <div class="news-block__anons-article_title">Издательству «ЮНИЛАЙН» исполнилось 6 лет!</div>
+                                <div class="news-block__anons-article_date">Дата публикации: 06-12-2016</div>
+                            </div>
+                            <div class="news-block__anons-article__image-box">
+                                <img src="static/img/general/6let.jpg">
+                            </div>
+                        </a>
+                        <div class="button-block news-block__addnews"><a class="button"><span class="big">показать еще</span></a>
+                        </div>
+                    </div>
+                    <div class="aside-sub-container">
+                        <div class="popular-article-block">
+                            <div class="popular-article-block__title">Популярные новости</div>
+                            <ol class="popular-article-block__body">
+                                <li class="popular-article-block__body__anons">
+                                    <a href="#">
+                                        <h6 class="popular-article-block__body__anons_titile-anons">Вступление в Ассоциацию распространителей печатной продукции</h6>
+                                        <div class="popular-article-block__body__anons_image-anons">
+                                            <img src="static/img/general/news2.jpg" alt="Вступление в Ассоциацию распространителей печатной продукции">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="popular-article-block__body__anons">
+                                    <a href="#">
+                                        <h6 class="popular-article-block__body__anons_titile-anons">Официальная группа газеты «НЕПОСЕДА» появилась в ВКонтакте</h6>
+                                        <div class="popular-article-block__body__anons_image-anons">
+                                            <img src="static/img/general/news.jpg" alt="Вступление в Ассоциацию распространителей печатной продукции">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="popular-article-block__body__anons">
+                                    <a href="#">
+                                        <h6 class="popular-article-block__body__anons_titile-anons">Стартует Всероссийская декада подписки!</h6>
+                                        <div class="popular-article-block__body__anons_image-anons">
+                                            <img src="static/img/general/news.jpg" alt="Вступление в Ассоциацию распространителей печатной продукции">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="popular-article-block__body__anons">
+                                    <a href="#">
+                                        <h6 class="popular-article-block__body__anons_titile-anons">Спецвыпуск-Лунный календарь от создателей "1000 советов дачнику"!</h6>
+                                        <div class="popular-article-block__body__anons_image-anons">
+                                            <img src="static/img/general/news.jpg" alt="Вступление в Ассоциацию распространителей печатной продукции">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="popular-article-block__body__anons">
+                                    <a href="#">
+                                        <h6 class="popular-article-block__body__anons_titile-anons">Благотворительная акция «Дерево добра»</h6>
+                                        <div class="popular-article-block__body__anons_image-anons">
+                                            <img src="static/img/general/news.jpg" alt="Вступление в Ассоциацию распространителей печатной продукции">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                        <a href="#" class="banner sticky-block">
+                            <img src="static/img/general/banner.jpg" alt="Дерево добра">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="content">
+                    <div class="footer__grid-sub">
+                        <div class="footer__item">
+                            <div class="footer__body subscribe-magazine">
+                                <div class="footer_title">Онлайн подписка на издания</div>
+                                <p class="footer_description">Подписывайтесь на любимые издания у нас на сайте</p>
+                                <div class="button-block">
+                                    <a href="#" class="button"> <span>подписаться</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__magazine">
+                                <img src="static/img/general/jornals.png">
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__body">
+                                <div class="footer_title">Подписка на новости и акции
+                                    <br>издательства</div>
+                                <div class="footer_description">Будьте в курсе новостей и акций
+                                    <BR>издательства "ЮНИЛАЙН"</div>
+                                <form class="footer__subscribe-news">
+                                    <div class="button-block footer__subscribe-news_send"><a id="footer_smb" class="button"><span>подписаться</span></a>
+                                        <input id="footer_smb_inp" type="submit">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__body">
+                                <div class="footer_title">Контакты</div>
+                                <div class="footer__contacts footer__contacts--socials">
+                                    <div class="footer__contacts_title">Официальные страницы:</div>
+                                    <a href="#" class="vkontakte-ico"></a>
+                                    <a href="#" class="facebook-ico"></a>
+                                    <a href="#" class="odnoklassniki-ico"></a>
+                                </div>
+                                <div class="footer__contacts">
+                                    <div class="footer__contacts_title">Телефоны:<a href="tel:+74812358777" class="footer__contacts_link">8(4812) 358-777</a>
+                                    </div>
+                                </div>
+                                <div class="footer__contacts">
+                                    <div class="footer__contacts_title">E-mail:<a href="mailto:total@yuniline.ru" class="footer__contacts_link">total@yuniline.ru</a>
+                                    </div>
+                                </div>
+                                <div class="footer__contacts">
+                                    <div class="footer__contacts_title">Адрес:<a href="mailto:total@yuniline.ru" class="footer__contacts_link">214004, г. Смоленск,<br> ул. Ново-Киевская, д. 9А, офис 1</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__grid-sub">
+                        <div class="footer__item item-25per">
+                            <div class="footer__body">
+                                <div class="footer_title footer__razdel-title">Издательство</div>
+                                <div class="footer__sub-menu">
+                                    <li class="footer__sub-menu_item"><a href="#">История</a>
+                                    </li>
+                                    <li class="footer__sub-menu_item"><a href="#">Представительства</a>
+                                    </li>
+                                    <li class="footer__sub-menu_item"><a href="#">Партнеры</a>
+                                    </li>
+                                    <li class="footer__sub-menu_item"><a href="#">Вакансии</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__item item-25per">
+                            <div class="footer__body">
+                                <div class="footer_title footer__razdel-title">Сотрудничество</div>
+                                <div class="footer__sub-menu">
+                                    <li class="footer__sub-menu_item"><a href="#">Авторам</a>
+                                    </li>
+                                    <li class="footer__sub-menu_item"><a href="#">Рекламодателям</a>
+                                    </li>
+                                    <li class="footer__sub-menu_item"><a href="#">Распространителям</a>
+                                    </li>
+                                    <li class="footer__sub-menu_item"><a href="#">Медиакиты</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__item item-25per">
+                            <div class="footer__body">
+                                <div class="footer_title footer__razdel-title">Магазин ЮНИЛАЙН</div>
+                                <div class="footer__sub-menu">
+                                    <li class="footer__sub-menu_item"><a href="#">Подписка</a>
+                                    </li>
+                                    <li class="footer__sub-menu_item"><a href="#">Прошлые номера</a>
+                                    </li>
+                                    <li class="footer__sub-menu_item"><a href="#">Сувенирная продукция</a>
+                                    </li>
+                                    <li class="footer__sub-menu_item"><a href="#">Корзина</a>
+                                    </li>
+                                    <li class="footer__sub-menu_item"><a href="#">Оплата и доставка</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__item item-25per">
+                            <div class="footer__body">
+                                <div class="footer_title footer__razdel-title">Конкурсы</div>
+                                <div class="footer__sub-menu">
+                                    <li class="footer__sub-menu_item"><a href="#">Все конкурсы</a>
+                                    </li>
+                                    <li class="footer__sub-menu_item"><a href="#">Онлайн регистрация в конкурсах</a>
+                                    </li>
+                                    <li class="footer__sub-menu_item"><a href="#">Правила участия в конкурсах</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__grid-sub">
+                        <div class="footer__copyright">
+                            <p>ЮНИЛАЙН - ИЗДАТЕЛЬСТВО ПЕЧАТНОЙ ПРОДУКЦИИ<span class="copy">© 2010-2017. Все права защищены. </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div id="mobileMenu" class="mobile-menu">
+            <div class="mobile-menu__body-menu">
+                <ul id="tabs" class="mobile-menu__body-menu__ul">
+                    <li id="sub-menu-1" class="mobile-menu__body-menu__item active__sub"><a href="#" class="mobile-menu__body-menu__item_link">Издательство</a>
+                        <ul class="mobile-menu__sub-menu">
+                            <li class="mobile-menu__sub-menu__item"><a href="isdatelstvo-history.html">История</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a href="departmentspage.html">Представительства</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a>Отзывы о нас</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a>Информационные материалы</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a href="jobs.html">Вакансии</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="sub-menu-2" class="mobile-menu__body-menu__item"><a href="#" class="mobile-menu__body-menu__item_link">Новости</a>
+                        <ul class="mobile-menu__sub-menu">
+                            <li class="mobile-menu__sub-menu__item"><a>Все новости</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a>События</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a>Конкурсы</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a>Акции</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="sub-menu-3" class="mobile-menu__body-menu__item"><a href="#" class="mobile-menu__body-menu__item_link">Сотрудничество</a>
+                        <ul class="mobile-menu__sub-menu">
+                            <li class="mobile-menu__sub-menu__item"><a>Авторам</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a>Рекламодателям</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a>Распространителям</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a>Медиакиты</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="sub-menu-4" class="mobile-menu__body-menu__item"><a href="#" class="mobile-menu__body-menu__item_link">Онлайн-подписка</a>
+                        <div class="mobile-menu__sub-menu">
+                            <div class="mobile-menu__sub-jornals mobile-menu__sub-jornals--top-margin">
+                                <a class="mobile-menu__sub-jornals__item">
+                                    <div class="mobile-menu__sub-jornals__image">
+                                        <img src="static/img/general/jornals.png" alt="1000 Советов">
+                                    </div>
+                                    <div class="mobile-menu__sub-jornals_title">1000 Советов</div>
+                                </a>
+                                <a class="mobile-menu__sub-jornals__item">
+                                    <div class="mobile-menu__sub-jornals__image">
+                                        <img src="static/img/general/jornals.png" alt="1000 Советов">
+                                    </div>
+                                    <div class="mobile-menu__sub-jornals_title">1000 Советов</div>
+                                </a>
+                                <a class="mobile-menu__sub-jornals__item">
+                                    <div class="mobile-menu__sub-jornals__image">
+                                        <img src="static/img/general/jornals.png" alt="1000 Советов">
+                                    </div>
+                                    <div class="mobile-menu__sub-jornals_title">1000 Советов</div>
+                                </a>
+                                <a class="mobile-menu__sub-jornals__item">
+                                    <div class="mobile-menu__sub-jornals__image">
+                                        <img src="static/img/general/jornals.png" alt="1000 Советов">
+                                    </div>
+                                    <div class="mobile-menu__sub-jornals_title">1000 Советов</div>
+                                </a>
+                                <a class="mobile-menu__sub-jornals__item">
+                                    <div class="mobile-menu__sub-jornals__image">
+                                        <img src="static/img/general/jornals.png" alt="1000 Советов">
+                                    </div>
+                                    <div class="mobile-menu__sub-jornals_title">1000 Советов</div>
+                                </a>
+                                <a class="mobile-menu__sub-jornals__item">
+                                    <div class="mobile-menu__sub-jornals__image">
+                                        <img src="static/img/general/jornals.png" alt="1000 Советов">
+                                    </div>
+                                    <div class="mobile-menu__sub-jornals_title">1000 Советов</div>
+                                </a>
+                                <a class="mobile-menu__sub-jornals__item">
+                                    <div class="mobile-menu__sub-jornals__image">
+                                        <img src="static/img/general/jornals.png" alt="1000 Советов">
+                                    </div>
+                                    <div class="mobile-menu__sub-jornals_title">1000 Советов</div>
+                                </a>
+                                <a class="mobile-menu__sub-jornals__item">
+                                    <div class="mobile-menu__sub-jornals__image">
+                                        <img src="static/img/general/jornals.png" alt="1000 Советов">
+                                    </div>
+                                    <div class="mobile-menu__sub-jornals_title">1000 Советов</div>
+                                </a>
+                                <a class="button"> <span>Перейти к каталогу изданий</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="sub-menu-5" class="mobile-menu__body-menu__item"><a href="#" class="mobile-menu__body-menu__item_link">Наши издания</a>
+                        <ul class="mobile-menu__sub-menu">
+                            <li class="mobile-menu__sub-menu__item"><a>Все издания</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a>Онлайн подписка</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="sub-menu-5" class="mobile-menu__body-menu__item"><a href="#" class="mobile-menu__body-menu__item_link">Магазин</a>
+                        <ul class="mobile-menu__sub-menu">
+                            <li class="mobile-menu__sub-menu__item"><a>Подписка</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a>Прошлые номера</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a>Сувенирная продукция</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a>Корзина</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a>Оплата и доставка</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="sub-menu-6" class="mobile-menu__body-menu__item"><a href="#" class="mobile-menu__body-menu__item_link">Конкурсы</a>
+                        <ul class="mobile-menu__sub-menu">
+                            <li class="mobile-menu__sub-menu__item"><a>Все конкурсы</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a>Онлайн регистрация в конкурсах</a>
+                            </li>
+                            <li class="mobile-menu__sub-menu__item"><a>Правила участия в конкурсах</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="sub-menu-7" class="mobile-menu__body-menu__item"><a href="#" class="mobile-menu__body-menu__item_link">ВОЙТИ / ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                        <div class="mobile-menu__sub-menu">
+                            <form class="mobile-menu__sub-menu__form">
+                                <label>Войти</label>
+                                <input placeholder="Логин или e-mail">
+                                <input placeholder="Пароль">
+                                <div class="button-block">
+                                    <a class="button"> <span>Войти</span>
+                                    </a>
+                                </div><a href="#" class="mobile-menu__sub-menu__form_link">Забыли пароль? Воспользуйтесь формой восстановления пароля...</a>
+                                <label>Регистрация</label>
+                                <div class="button-block">
+                                    <a class="button"> <span>Перейти к регистрации</span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li id="sub-menu-8" class="mobile-menu__body-menu__item"><a href="#" class="mobile-menu__body-menu__item_link">Ваш регион</a>
+                        <div class="mobile-menu__sub-menu">
+                            <form class="mobile-menu__sub-menu__form">
+                                <label>Выбрать регион</label>
+                                <input placeholder="Смоленск">
+                                <div class="button-block">
+                                    <a class="button"> <span>Перейти к регистрации</span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li id="sub-menu-9" class="mobile-menu__body-menu__item"><a href="#" class="mobile-menu__body-menu__item_link">Поиск по сайту</a>
+                        <div class="mobile-menu__sub-menu">
+                            <form class="mobile-menu__sub-menu__form">
+                                <label>Поиск по сайту</label>
+                                <input placeholder="Введите поисковую фразу">
+                                <div class="button-block">
+                                    <a class="button"> <span>Поиск</span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li id="sub-menu-10" class="mobile-menu__body-menu__item"><a href="#" class="mobile-menu__body-menu__item_link">Задать вопрос</a>
+                        <div class="mobile-menu__sub-menu">
+                            <form class="form--no-m mobile-menu__sub-menu__form">
+                                <label class="form--no-m">Задать вопрос</label>
+                                <input placeholder="Ваше имя" required>
+                                <input placeholder="e-mail" required>
+                                <input placeholder="Номер телефона" required>
+                                <textarea placeholder="Текст сообщения" required></textarea>
+                                <ul class="error-block">
+                                    <li class="error-block_item">У вас странное имя!</li>
+                                    <li class="error-block_item">Добавить резюме надо обязательно!</li>
+                                    <li class="error-block_item error-block_item--ok">Ваше сообщение отправлено!</li>
+                                </ul>
+                                <div class="button-block">
+                                    <div id="form-submit-mobile-button" class="button"><span>Отправить сообщение</span>
+                                    </div>
+                                    <input id="form-submit-mobile-input" type="submit" class="form_file">
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li id="sub-menu-11" class="mobile-menu__body-menu__item"><a href="#" class="mobile-menu__body-menu__item_link">Контакты</a>
+                        <div class="mobile-menu__sub-menu">
+                            <form class="mobile-menu__sub-menu__form">
+                                <label>Контакты</label>
+                                <div id="map"></div>
+                                <div class="mobile-menu__sub-menu__form_contact-title">Адрес:</div><a class="mobile-menu__sub-menu__form_contact-link">214004, г. Смоленск, ул. Ново-Киевская, д. 9А, офис 1</a>
+                                <div class="mobile-menu__sub-menu__form_contact-title">Телефон:</div><a href="tel:+74812358777" class="mobile-menu__sub-menu__form_contact-link">8(4812) 358-777</a>
+                                <div class="mobile-menu__sub-menu__form_contact-title">e-mail:</div><a href="mailto:total@yuniline.ru" class="mobile-menu__sub-menu__form_contact-link">total@yuniline.ru</a>
+                                <div class="mobile-menu__social">
+                                    <a href="#" target="_blank" class="vk"></a>
+                                    <a href="#" target="_blank" class="face"></a>
+                                    <a href="#" target="_blank" class="od"></a>
+                                </div>
+                                <div class="button-block">
+                                    <a class="button"> <span>Адреса представительств</span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div><a id="closemenu_button" class="mobile-menu__close"><span></span></a>
+        </div>
+        <script src="static/js/main.js"></script>
+        <script src="static/js/separate-js/index.js"></script>
+        <script src="static/js/separate-js/load.js"></script>
+
+
+        <script src="static/js/separate-js/jquery.smoothscroll.js" defer></script>
+    </body>
+
+</html>
