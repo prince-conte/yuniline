@@ -12,8 +12,9 @@ html(class="no-js", lang="ru")
     include ../components/newsblock/newsblock
     include ../components/aside-sub-container/aside-sub-container
     include ../components/statickinfo/statickinfo
-    include ../components/magazineimage/magazineimage
     include ../components/conteregform/conteregform
+    include ../components/populararticleblock/populararticleblock
+    include ../components/banner/banner
 
     
     
@@ -31,8 +32,10 @@ html(class="no-js", lang="ru")
         +header()
         
         .page__wrapper
-            +nav()
-            +magazineimage()
+            +nav()        
+            .magazineimage
+                img(src="static/img/general/1000sovetov.jpg")
+            
             .paginator
                 .content
                     
@@ -56,9 +59,9 @@ html(class="no-js", lang="ru")
                 .content
                     +conteregform()
 
-                    .aside-sub-container.aside-sub-container--magazine
-
-                        
+                    .aside-sub-container
+                        +populararticleblock(populararticleblock.article)
+                        +banner()         
  
 
             +footer()

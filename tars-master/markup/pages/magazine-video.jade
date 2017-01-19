@@ -12,7 +12,7 @@ html(class="no-js", lang="ru")
     include ../components/newsblock/newsblock
     include ../components/aside-sub-container/aside-sub-container
     include ../components/statickinfo/statickinfo
-    include ../components/magazinetechcontent/magazinetechcontent
+    include ../components/magazinevideo/magazinevideo
     include ../components/magazinemenu/magazinemenu
     include ../components/magazinecontacts/magazinecontacts
     
@@ -32,9 +32,9 @@ html(class="no-js", lang="ru")
         
         .page__wrapper
             +nav()
-                    
+
             .magazineimage
-                img(src="static/img/general/1000sovetov.jpg")
+                img(src="static/img/general/miniaka.jpg")
             
             .paginator
                 .content
@@ -57,7 +57,7 @@ html(class="no-js", lang="ru")
    
             .all-container
                 .content
-                    +magazinetechcontent()
+                    +magazinevideo()
 
                     .aside-sub-container.aside-sub-container--magazine
                         +magazinemenu()

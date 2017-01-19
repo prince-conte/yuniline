@@ -1,0 +1,28 @@
+include /category/category
+mixin commentscontent(data)
+
+
+    .news-block
+    
+
+        if data.useCategory
+            +category(category.comments)
+
+
+    
+        .departments
+    
+            .departments__item
+                .departments__item_image
+                    img.box-shadow-one(src="static/img/general/smolensk.jpg" alt="ЮНИЛАЙН Смоленск")
+                .departments__item__content
+                    .departments__item__country
+                        img.departments__item__country_flag(src="static/img/general/russia.png" alt="ЮНИЛАЙН Россия")
+                        span.departments__item__country_title Российская Федерация
+                        .news-block__anons-article_title.news-block__anons-article_title--dep-no-l Cмоленск
+                        .footer_description TransferWise’s Smolensk office is located in 24th street within walking distance of the Madison Square Park. Here you’ll find a full slice of TransferWise, building the new world of money. 
+                        
+                        .button-block.align-left
+                            a.button
+                                span подробнее
+    

@@ -155,7 +155,14 @@ h4
         line-height 18px
     
  
-article   
+article 
+    
+            
+    a
+        color colfirm
+        &:visited
+            color colfirm
+     
     
     h1,
     h2,
@@ -201,7 +208,8 @@ article
         
         a
             color colfirm
-        
+            &:visited
+                color colfirm
         img
             width 100%
             height auto
@@ -283,6 +291,10 @@ article
         border solid 1px #e6eaea
         border-radius 5px
         padding 10px
+        
+        li
+            &:before
+                display none
         
         &_item
             color colfirm
