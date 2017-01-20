@@ -116,4 +116,26 @@ mixin category(data)
                  
                 li.category-news__item
                     a(href="#") Вакансии
-              
+                         
+                         
+                         
+    if data.categoryRek
+        .category-news
+            .category-news__active-category 
+                .category-news__active-category_title Сотрудничество: <h1 class="active">Рекламодателям</h1>
+            
+            
+            ul.category-news__grid
+        
+                li.category-news__item
+                    a(href="#") Авторам
+                
+                li.category-news__item
+                    a(href="#") Рекламодателям
+
+                li.category-news__item
+                    a(href="#") Распространителям
+                 
+                li.category-news__item
+                    a(href="#") Медиакиты
+

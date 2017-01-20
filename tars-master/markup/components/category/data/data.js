@@ -5,6 +5,7 @@ category: {
         categoryIsdatelstvo: false,
         categoryJobs: false,
         categorycomments: true,
+        categoryRek: false,
         categoryDepartments: false
     },
      
@@ -13,6 +14,7 @@ category: {
         categoryNews: false,
         categoryJobs: false,
         categorycomments: true,
+        categoryRek: false,
         categoryDepartments: false
     },
          
@@ -21,6 +23,7 @@ category: {
         categoryNews: false,
         categoryJobs: true,
         categorycomments: true,
+        categoryRek: false,
         categoryDepartments: false
     },
              
@@ -29,6 +32,7 @@ category: {
         categoryNews: false,
         categoryJobs: false,
         categoryDepartments: true,
+        categoryRek: false,
         categorycomments: true
     },
                  
@@ -36,7 +40,16 @@ category: {
         categoryDepartments: false,
         categoryNews: false,
         categoryJobs: false,
+        categoryRek: false,
         categoryСomments: true
+    },
+                     
+    reklamodatelu: {
+        categoryDepartments: false,
+        categoryNews: false,
+        categoryJobs: false,
+        categoryСomments: false,
+        categoryRek: true
     },
     
 }
