@@ -10,6 +10,8 @@ html(class="no-js", lang="ru")
     include ../components/mobile-menu/mobile-menu    
     
     include ../components/newsblock/newsblock
+    include ../components/populararticleblock/populararticleblock
+    include ../components/banner/banner
     include ../components/aside-sub-container/aside-sub-container
     include ../components/statickinfo/statickinfo
     include ../components/magazines-grid/magazines-grid
@@ -33,9 +35,6 @@ html(class="no-js", lang="ru")
         .page__wrapper
             +nav()
 
-            .magazineimage
-                img(src="static/img/general/miniaka.jpg")
-            
             .paginator
                 .content
                     
@@ -47,21 +46,15 @@ html(class="no-js", lang="ru")
                                                                     
                     .paginator__item
                         a(href="#") Издания
-                                                                   
-                    .paginator__item
-                        span /
-                                                                    
-                    .paginator__item
-                        a(href="#") 1000 Советов
-                                                                                 
-   
+
+
             .all-container
                 .content
                     +magazines-grid()
 
-                    .aside-sub-container.aside-sub-container--magazine
-                        +magazinemenu()
-                        +magazinecontacts()
+                    .aside-sub-container
+                        +populararticleblock(populararticleblock.article)
+                        +banner()
                         
  
 

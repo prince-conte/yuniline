@@ -274,6 +274,10 @@ article
         @media screen and (max-width: 760px)
             display block
             text-align center
+            
+    
+            
+        
         
     .error-block
         display flex
@@ -311,6 +315,7 @@ article
         flex-wrap wrap
         flex-direction column
         margin-bottom 20px
+        position relative
         
         @media screen and (max-width: 760px)
             flex-basis 100%
@@ -329,8 +334,55 @@ article
             
             
 
-
+    .check-box
+        width 32px
+        height 32px
+        background #fff
+        border solid 2px colfirm
+        position absolute
+        left 0px
+        top 18px
+        cursor pointer
         
+        &:before
+            content '';
+            position absolute
+            display none
+            width 24px
+            height 2px
+            background colfirm
+            left 2px
+            top 13px
+            transform rotate(132deg)
+            
+        &:after
+            content '';
+            position absolute
+            display none
+            width 24px
+            height 2px
+            background colfirm
+            left 2px
+            top 13px
+            transform rotate(227deg)
+            
+            
+    .active
+        &:before
+            display block
+        &:after
+            display block
+        
+            
+             
+    .check-box-label
+        padding-left 50px
+        font-size 12px
+        padding-top 15px
+        line-height 18px
+        a
+            color colfirm
+
     input,
     label
         display inherit

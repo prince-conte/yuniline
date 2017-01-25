@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    
+    var checkBoxSubs = 0;
+        checkBoxSec = 0;
 
  
 conteReg();   
@@ -21,6 +24,52 @@ $("#footer_smb").click(function() {
     
     
    
+$("#form-check-subs").click(function() {
+    
+    if (checkBoxSubs == 0)
+        
+    {    
+        $("#form-input-subs").trigger('click');
+        $("#check-box-subs").addClass('active');
+        checkBoxSubs = 1;
+    }
+    
+    else
+            
+    {    
+        $("#form-input-subs").trigger('click');
+        $("#check-box-subs").removeClass('active');
+        checkBoxSubs = 0;
+    }
+    
+    
+});
+    
+     
+   
+$("#form-check-sec").click(function() {
+    
+    if (checkBoxSec == 0)
+        
+        
+    {    
+        $("#form-input-sec").trigger('click');
+        $("#check-box-sec").addClass('active');
+        checkBoxSec = 1;
+    }
+    
+    else
+            
+    {    
+        $("#form-input-sec").trigger('click');
+        $("#check-box-sec").removeClass('active');
+        checkBoxSec = 0;
+    }
+    
+    
+});
+    
+     
 $("#form-file-button").click(function() {
     
     $("#form-file-input").trigger('click');

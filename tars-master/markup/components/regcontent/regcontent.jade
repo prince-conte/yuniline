@@ -1,0 +1,76 @@
+mixin regcontent(data)
+
+    .news-block 
+
+        form.form
+
+            .input-block
+                label
+                    span.obligatorily Имя
+                input(type="text" required)
+          
+            .input-block
+                label
+                    span.obligatorily Фамилия
+                input(type="text" required)
+                
+            .input-block
+                label
+                    span Отчество
+                input(type="text")
+       
+       
+        
+          
+            .input-block
+                label
+                    span.obligatorily E-mail / Логин
+                input(type="text" required)
+                     
+              
+            .input-block
+                label
+                    span.obligatorily Пароль
+                input(type="text" required)
+                             
+            .input-block
+                label
+                    span.obligatorily Повторите пароль
+                input(type="text" required)
+                     
+    
+       
+       
+            .input-block#form-check-subs
+                .check-box#check-box-subs
+                .check-box-label Хочу получать новости издательства, а также информацию о новых акциях, конкурсах и товарах.
+                input.form_file#form-input-subs(type="checkbox")
+                
+            .input-block#form-check-sec
+                .check-box#check-box-sec
+                .check-box-label Я подтверждаю свою дееспособность, даю согласие на обработку своих персональных данных.<br> <a href="#" target="_blank">Подробнее о защите персональных данных.</a>
+                input.form_file#form-input-sec(type="checkbox")
+         
+         
+         
+         
+            .input-block.input-block--last
+                label
+                    span.obligatorily А не робот ли вы?
+                .form__submit__capcha
+                    div(class="g-recaptcha" data-sitekey="6LfEHhEUAAAAABw_ZPCye4biwgit5WwLq8zWYyqQ" data-callback="YourOnSubmitFn")
+                    
+                    
+            ul.error-block
+                li.error-block_item У вас странное имя!
+                li.error-block_item Добавить резюме надо обязательно!
+                li.error-block_item.error-block_item--ok Ваше сообщение отправлено!
+                
+            
+            
+            .button-block
+                .button#form-submit-button
+                    span Зарегистрироваться
+                input.form_file#form-submit-input(type="submit")
+
+                
