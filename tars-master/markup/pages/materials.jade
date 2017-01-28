@@ -1,17 +1,17 @@
 doctype html
 html(class="no-js", lang="ru")
 
-    include ../components/headtwo/headtwo
-
+    include ../components/head/head
     include ../components/header/header
     include ../components/nav/nav
     include ../components/all-container/all-container
     include ../components/footer/footer
     include ../components/mobile-menu/mobile-menu    
     
-    include ../components/newsblock/newsblock
+    include ../components/contentmaterials/contentmaterials
     include ../components/aside-sub-container/aside-sub-container
-    include ../components/statickinfo/statickinfo
+    include ../components/populararticleblock/populararticleblock
+    include ../components/banner/banner
 
     
     
@@ -22,7 +22,7 @@ html(class="no-js", lang="ru")
     
 
     head
-        +headtwo(headtwo.news)
+        +head(head.news)
     body.page
         |%=symbols=%
 
@@ -40,23 +40,21 @@ html(class="no-js", lang="ru")
                                                                     
                     .paginator__item
                         a(href="#") Издательство
+                                                                  
+                    .paginator__item
+                        span /
+                                                                    
+                    .paginator__item
+                        a(href="#") Информационные материалы
                         
             .all-container
                 .content
-                    +statickinfo(statickinfo.categoryTrue)
+                    +contentmaterials(contentmaterials.categoryTrue)
+                    .aside-sub-container
 
-                    .aside-sub-container.aside-static-info
-                    
-                        .statickinfo__photo
-                            img(src="static/img/general/ava1.jpg") 
-                            span.magazines-grid__tag Генеральный директор
-                            h4.magazines-grid__title Веремьев Юрий Николаевич
-                                      
-                        .statickinfo__photo
-                            img(src="static/img/general/ava6.jpg") 
-                            span.magazines-grid__tag Генеральный директор
-                            h4.magazines-grid__title Веремьев Юрий Николаевич
-                                  
+                    .aside-sub-container
+                        +populararticleblock(populararticleblock.article)
+                        +banner()
 
             +footer()
         +mobile-menu()
@@ -68,11 +66,7 @@ html(class="no-js", lang="ru")
             //- +example()
 
             //+footer()
-        link( rel="stylesheet" type="text/css", href="static/css/separate-css/foundation.css")
-        link( rel="stylesheet" type="text/css", href="static/css/separate-css/twentytwenty.css")
-        link(rel="stylesheet" href="static/css/separate-css/social-share-kit.css")      
-        script(src='%=static=%js/separate-js/jquery.event.move.js')
-        script(src='%=static=%js/separate-js/jquery.twentytwenty.js')
+        link(rel="stylesheet" href="static/css/separate-css/social-share-kit.css")    
         script(src='%=static=%js/main%=hash=%%=min=%.js')
         script(src='%=static=%js/separate-js/index%=hash=%%=min=%.js')
         script(src='%=static=%js/separate-js/svg4everybody.min.js')

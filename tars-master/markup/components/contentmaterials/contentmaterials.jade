@@ -1,0 +1,63 @@
+include /category/category
+mixin contentmaterials(data)
+
+
+    .news-block
+    
+
+        if data.useCategory
+            +category(category.materials)
+            
+                    
+        article.statickinfo__article
+        
+            p.article-social-description Информационные материалы распространяются бесплатно, вы можете самостоятельно скачать их с нашего сайта. 
+        
+
+
+    
+        .departments
+    
+    
+            
+            .departments__item
+                .departments__item_image
+                    img.box-shadow-one(src="static/img/general/infomat.jpg" alt="Непоседа")
+                .departments__item__content
+                    .departments__item__country
+                        span.departments__item__country_title Вывеска ( 6 х 3)
+                        .news-block__anons-article_title.news-block__anons-article_title--dep-no-l "Чудо поварешка" 
+                        .footer_description Рекламный материал для распространителей (eps)
+                        .button-block.align-left
+                            a.button(href="#")
+                                span подробнее
+    
+    
+            .departments__item
+                .departments__item_image
+                    img.box-shadow-one(src="static/img/general/infomat2.jpg" alt="3/9 царство")
+                .departments__item__content
+                    .departments__item__country
+                        span.departments__item__country_title Вывеска ( 6 х 3)
+                        .news-block__anons-article_title.news-block__anons-article_title--dep-no-l 3/9 царство
+                        .footer_description Рекламный материал для распространителей (eps)
+                        
+                        .button-block.align-left
+                            a.button(href="#")
+                                span подробнее
+                                
+                            
+            .departments__item
+                .departments__item_image
+                    img.box-shadow-one(src="static/img/general/infomat3.jpg" alt="Календарь 1000 советов")
+                .departments__item__content
+                    .departments__item__country
+                        span.departments__item__country_title Календарь
+                        .news-block__anons-article_title.news-block__anons-article_title--dep-no-l Календарь 1000 советов
+                        .footer_description Сувенирная продукция (eps)
+                        
+                        .button-block.align-left
+                            a.button(href="#")
+                                span подробнее
+                                
+                                

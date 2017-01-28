@@ -1,3 +1,5 @@
+include ../magazines-grid/magazines-grid
+
 include /category/category
 mixin statickinfo(data)
 
@@ -16,9 +18,11 @@ mixin statickinfo(data)
             p “У нас изначально была задача создать качественный продукт для людей. Газета с первых дней работает в одном ключе — полный интерактив с нашей аудиторией. Вся концепция издания основана на вопросах, ответах и письмах наших любимых читателей.”, —  заявляет учредитель газеты Юрий Васильевич Чепиков. 
             
                         
-            p 
-                img(src="static/img/general/ava5.jpg")
-        
+
+            .twentytwenty-container
+                img(src="static/img/general/1_1.jpg")
+                img(src="static/img/general/1_2.jpg")
+      
         
             p Еще одним важным событием для Издательства “ЮНИЛАЙН” стало сотрудничество с белорусскими партнерами в лице Олега Семеновича Кульбацкого и развитие линейки изданий для детей. Детские журналы и газеты Издательства “ЮНИЛАЙН” пользуются популярностью у детей и родителей по всей России (???). Главное достояние линейки детских изданий - газета  “НЕПОСЕДА”, которая на протяжении многих лет является лидером рынка по версии АРПП в тематической группе “Детские издания”. 
         
@@ -32,100 +36,11 @@ mixin statickinfo(data)
                 li YUNILINE  EUROPE OÜ - Эстония, Тарту;
                 li ООО ЮНИЛАЙН БЕЛ - Беларусь, Минск;
                 li ТОО  ЮНИЛАЙН КАЗАХСТАН - Казахстан, Алма-Ата.
-                
-                
-            h2 Издательство “ЮНИЛАЙН” - это
             
             
-            
-            
-            .mobile-menu__sub-jornals.mobile-menu__sub-jornals--top-margin
-                            
-                a.mobile-menu__sub-jornals__item
-                    .mobile-menu__sub-jornals__image
-                        img(src="static/img/general/jornals.png" alt="1000 Советов")
-                    .mobile-menu__sub-jornals_title 1000 Советов
-                                              
-                a.mobile-menu__sub-jornals__item
-                    .mobile-menu__sub-jornals__image
-                        img(src="static/img/general/jornals.png" alt="1000 Советов")
-                    .mobile-menu__sub-jornals_title 1000 Советов
-                                              
-                a.mobile-menu__sub-jornals__item
-                    .mobile-menu__sub-jornals__image
-                        img(src="static/img/general/jornals.png" alt="1000 Советов")
-                    .mobile-menu__sub-jornals_title 1000 Советов
-                                              
-                a.mobile-menu__sub-jornals__item
-                    .mobile-menu__sub-jornals__image
-                        img(src="static/img/general/jornals.png" alt="1000 Советов")
-                    .mobile-menu__sub-jornals_title 1000 Советов
-                                              
-                a.mobile-menu__sub-jornals__item
-                    .mobile-menu__sub-jornals__image
-                        img(src="static/img/general/jornals.png" alt="1000 Советов")
-                    .mobile-menu__sub-jornals_title 1000 Советов
-                                              
-                a.mobile-menu__sub-jornals__item
-                    .mobile-menu__sub-jornals__image
-                        img(src="static/img/general/jornals.png" alt="1000 Советов")
-                    .mobile-menu__sub-jornals_title 1000 Советов
-                                              
-                a.mobile-menu__sub-jornals__item
-                    .mobile-menu__sub-jornals__image
-                        img(src="static/img/general/jornals.png" alt="1000 Советов")
-                    .mobile-menu__sub-jornals_title 1000 Советов
-                                              
-                a.mobile-menu__sub-jornals__item
-                    .mobile-menu__sub-jornals__image
-                        img(src="static/img/general/jornals.png" alt="1000 Советов")
-                    .mobile-menu__sub-jornals_title 1000 Советов
-                                              
-                a.mobile-menu__sub-jornals__item
-                    .mobile-menu__sub-jornals__image
-                        img(src="static/img/general/jornals.png" alt="1000 Советов")
-                    .mobile-menu__sub-jornals_title 1000 Советов
-                                              
-                a.mobile-menu__sub-jornals__item
-                    .mobile-menu__sub-jornals__image
-                        img(src="static/img/general/jornals.png" alt="1000 Советов")
-                    .mobile-menu__sub-jornals_title 1000 Советов
-                                              
-                a.mobile-menu__sub-jornals__item
-                    .mobile-menu__sub-jornals__image
-                        img(src="static/img/general/jornals.png" alt="1000 Советов")
-                    .mobile-menu__sub-jornals_title 1000 Советов
-                                              
-                a.mobile-menu__sub-jornals__item
-                    .mobile-menu__sub-jornals__image
-                        img(src="static/img/general/jornals.png" alt="1000 Советов")
-                    .mobile-menu__sub-jornals_title 1000 Советов
-                                              
-                a.mobile-menu__sub-jornals__item
-                    .mobile-menu__sub-jornals__image
-                        img(src="static/img/general/jornals.png" alt="1000 Советов")
-                    .mobile-menu__sub-jornals_title 1000 Советов
-                                              
-                a.mobile-menu__sub-jornals__item
-                    .mobile-menu__sub-jornals__image
-                        img(src="static/img/general/jornals.png" alt="1000 Советов")
-                    .mobile-menu__sub-jornals_title 1000 Советов
-                                              
-                a.mobile-menu__sub-jornals__item
-                    .mobile-menu__sub-jornals__image
-                        img(src="static/img/general/jornals.png" alt="1000 Советов")
-                    .mobile-menu__sub-jornals_title 1000 Советов
-                        
-          
+    +magazines-grid()
 
             
-            .ssk-share-title Поделиться:
-            
-            .ssk-group
-                a(href="" class="ssk ssk-text ssk-vk ssk-sm") vk.com
-                a(href="" class="ssk ssk-text ssk-facebook ssk-sm") Facebook.com
-                a(href="" class="ssk ssk-text ssk-twitter ssk-sm")  Twitter.com
-                a(href="" class="ssk ssk-text ssk-google-plus ssk-sm") Google.com
 
 
         
