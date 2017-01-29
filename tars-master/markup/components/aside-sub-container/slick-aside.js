@@ -16,9 +16,7 @@ $(window).scroll(function() {
 	var mb = 800; /* высота подвала с запасом */
 	var st = $(window).scrollTop();
 	var sb = $(".sticky-block");
-	var sbi = $(".sticky-block");
 	var sb_ot = sb.offset().top;
-	var sbi_ot = sbi.offset().top;
 	var sb_h = sb.height();
  
 	if(sb_h + $(document).scrollTop() + sb_m + mb < $(document).height()) {
