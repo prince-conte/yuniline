@@ -1,0 +1,122 @@
+mixin shopcontainer(data)
+
+    section.shopcontainer 
+        article.shopcontainer__tovar-box
+            .shopcontainer__slider
+                .tovar-slider
+                
+                    .tovar-slider-item
+                        img(src="static/img/general/tovar.jpg")
+                        
+                    .tovar-slider-item
+                        img(src="static/img/general/tovar.jpg")
+                        
+                    .tovar-slider-item
+                        img(src="static/img/general/tovar.jpg")
+                  
+                .slider-nav
+                
+                    .slider-nav-item
+                        img(src="static/img/general/tovar.jpg")
+                        
+                    .slider-nav-item
+                        img(src="static/img/general/tovar.jpg")
+                        
+                    .slider-nav-item
+                        img(src="static/img/general/tovar.jpg")
+                        
+                .ssk-group
+                    a(href="" class="ssk ssk-text ssk-vk ssk-sm") vk.com
+                    a(href="" class="ssk ssk-text ssk-facebook ssk-sm") Facebook.com
+                    a(href="" class="ssk ssk-text ssk-twitter ssk-sm")  Twitter.com
+                    a(href="" class="ssk ssk-text ssk-google-plus ssk-sm") Google.com
+                    
+                .shopcontainer__other-goods
+                    h3 С этим изданием также покупают:
+                            .magazines-grid
+    
+                                a.magazines-grid__item(href="#" alt="")
+                                    img.magazines-grid__image(src="static/img/general/tovar.jpg")
+                                    span.magazines-grid__tag Для всей семьи
+                                    h4.magazines-grid__title 1000 советов
+
+    
+                                a.magazines-grid__item(href="#" alt="")
+                                    img.magazines-grid__image(src="static/img/general/tovar.jpg")
+                                    span.magazines-grid__tag Детское издание
+                                    h4.magazines-grid__title Непоседа
+
+    
+                                a.magazines-grid__item(href="#" alt="")
+                                    img.magazines-grid__image(src="static/img/general/tovar.jpg")
+                                    span.magazines-grid__tag Детское издание
+                                    h4.magazines-grid__title Непоседа
+
+    
+                                a.magazines-grid__item(href="#" alt="")
+                                    img.magazines-grid__image(src="static/img/general/tovar.jpg")
+                                    span.magazines-grid__tag Детское издание
+                                    h4.magazines-grid__title Непоседа
+
+
+        
+            .shopcontainer__tovar-card
+                .category-news
+                    .category-news__active-category 
+                        .category-news__active-category_title Газета: <h1 class="active">1000 советов</h1>
+                ul.magazine-content__signs
+                    li.magazine-content__signs_item <b>Вид:</b> газета
+                    li.magazine-content__signs_item <b>Категория:</b> 16+
+                    li.magazine-content__signs_item <b>Формат:</b> А4
+                    li.magazine-content__signs_item <b>Периодичность:</b> 2 раза в месяц
+                    li.magazine-content__signs_item <b>Количество страниц:</b> 36-40
+                    li.magazine-content__signs_item <b>Вес,г:</b> 60
+                    li.magazine-content__signs_item <b>Цена:</b> <span id="price">57.80</span> <i class="ruble-img"></i>
+                    
+                p.article-social-description Подписка на следующий месяц принимается до 9 числа 23:59 по мск. текущего месяца. Подписная кампания на первое полугодие стартует с 1 сентября, на второе полугодие с 1 апреля.
+                
+                h2 Выберите период подписки:
+                
+                .shopcontainer__subscribe-grid#js-subscribe
+                    label.shopcontainer__subscribe-item#js-month1(data-shopin="0" data-bascetin="0") Январь
+                        input(type="checkbox" value="0")
+                    label.shopcontainer__subscribe-item#js-month2(data-shopin="0" data-bascetin="0") Февраль
+                        input(type="checkbox" value="0")
+                    label.shopcontainer__subscribe-item#js-month3(data-shopin="1" data-bascetin="0") Март
+                        input(type="checkbox" value="0")
+                    label.shopcontainer__subscribe-item#js-month4(data-shopin="1" data-bascetin="0") Апрель
+                        input(type="checkbox" value="0")
+                    label.shopcontainer__subscribe-item#js-month5(data-shopin="1" data-bascetin="0") Май
+                        input(type="checkbox" value="0")
+                    label.shopcontainer__subscribe-item#js-month6(data-shopin="1" data-bascetin="0") Июнь
+                        input(type="checkbox" value="0")
+                    label.shopcontainer__subscribe-item#js-month7(data-shopin="1" data-bascetin="0") Июль
+                        input(type="checkbox" value="0")
+                    label.shopcontainer__subscribe-item#js-month8(data-shopin="1" data-bascetin="0") Август
+                        input(type="checkbox" value="0")
+                    label.shopcontainer__subscribe-item#js-month9(data-shopin="1" data-bascetin="0") Сентябрь
+                        input(type="checkbox" value="0")
+                    label.shopcontainer__subscribe-item#js-month10(data-shopin="1" data-bascetin="0") Октябрь
+                        input(type="checkbox" value="0")
+                    label.shopcontainer__subscribe-item#js-month11(data-shopin="1" data-bascetin="0") Ноябрь
+                        input(type="checkbox" value="0")
+                    label.shopcontainer__subscribe-item#js-month12(data-shopin="1" data-bascetin="0") Декабрь
+                        input(type="checkbox" value="0")
+                    
+                .shopcontainer__card-in
+                    .category-news
+                        .category-news__active-category 
+                            .category-news__active-category_title Итоговая стоимость подписки: <div class="active"> <span id="itog-price-element">0.00</span><i class="ruble-img-big"></i></div>
+                            
+                    .button-block
+                        a.button
+                            span Оформить подписку
+                            
+                            
+                .shopcontainer__annotation
+                
+                    h2 Аннотация
+                    p «Маленькие академики» —  это детский развивающий журнал для подготовки к школе. Ребенок дошкольного возраста должен уметь решать простые логические задачки, головоломки и ребусы, группировать предметы по признакам, восстанавливать последовательность событий, читать простые предложения и понимать их, различать цвета, фигуры, стороны света и явления природы. 
+                    p Журнал «Маленькие академики» поможет привить необходимые навыки для успешного развития ребенка. Задания по арифметике, чтению и письму, на логику и мышление, художественное творчество – все это ждет ребенка на страницах нашего издания. Журнал «Маленькие академики» разработан лучшими преподавателями школ раннего развития малышей. Уверены, с помощью нашего развивающего журнала родителям будет легче понять, что нравится ребенку и какие его таланты наиболее перспективны. Возможно, вы сумеете точно выбрать дополнительное образование. или подходя
+            
+            
