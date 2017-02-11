@@ -62,32 +62,35 @@ ul
 
 .all-container
     background colbg
-    min-height 1100px
-    
+    //min-height 1100px
+    margin-bottom 100px  
 .content
     position relative
     margin 0 auto
-    display block
+    display flex
     max-width WRAPPER_WIDTH
     min-width 300px
     height inherit
+    justify-content space-between
+    flex-wrap wrap
     
     @media screen and (max-width: 1440px) 
         width 100%
         padding 0 20px
 
     
-    @media screen and (min-width: 300px)  and (max-width: 599px) 
+    @media screen and (min-width: 300px)  and (max-width: 599px)
+        display block
         width 100%
         padding 0 10px
 
 
 .page__wrapper
-    top 90px
+    margin-top 90px
     position relative
     background colbg
     @media screen and (min-width: 300px)  and (max-width: 599px) 
-        top 50px
+        margin-top 50px
 
 .page__buffer
     height 50px
@@ -96,6 +99,9 @@ ul
     display block
     padding-top 25px
     margin-left 10px
+    
+    .content
+        display block
 .paginator__item
     display inline-block
     margin-right 5px
@@ -143,7 +149,7 @@ h3
     line-height 46px
     @media screen and (min-width: 300px) and (max-width: 599px)
         font-size 18px
-        line-height 18px
+        line-height 24px
     
     
 h4
@@ -176,20 +182,20 @@ article
         
     h2
         font-size 20px
-        line-height 22px
+        line-height 28px
             
     h3
         font-size 16px
-        line-height 16px
+        line-height 22px
                   
     h4
         font-size 16px
-        line-height 16px
+        line-height 22px
         text-transform none
                         
     h5
         font-size 15px
-        line-height 16px
+        line-height 20px
         text-transform none
         font-family fonttxt
         
@@ -200,6 +206,11 @@ article
         color coltxt
         font-size BASE_SIZE
         font-family fonttxt
+        
+        @media screen and (min-width: 300px) and (max-width: 599px)
+            font-size 15px
+        
+        
         
         a
             color colfirm

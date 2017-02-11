@@ -1,8 +1,6 @@
 .magazines-grid
     display flex
-    flex-direction row
     flex-wrap wrap
-    justify-content flex-start
     margin-top 30px
     
     &__item
@@ -13,8 +11,13 @@
         margin-bottom 20px
         padding 0 10px
         @media screen and (max-width: 760px)
-            flex-basis 33.333333%
+            max-width 33.333333%
+            flex-basis 33.333333%        
+        @media screen and (max-width: 600px)
+            max-width 50%
+            flex-basis 50%
         @media screen and (max-width: 400px)
+            max-width 100%
             flex-basis 100%
             padding 0
             
@@ -34,6 +37,7 @@
         font-size 17px
         line-height 21px
         color coltxt
+        padding-left 0
                          
                 
     &__tag
