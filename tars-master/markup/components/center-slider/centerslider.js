@@ -66,6 +66,16 @@ $('.center').slick({
       settings: {
         arrows: true,
         centerMode: true,
+        centerPadding: '150px',
+        slidesToShow: 1
+      }
+    },
+          
+    {
+      breakpoint: 1000,
+      settings: {
+        arrows: true,
+        centerMode: true,
         centerPadding: '0px',
         slidesToShow: 1
       }
