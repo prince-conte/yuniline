@@ -6,26 +6,25 @@
     &__item
         display inherit
         max-width 100%
-        flex-basis 25%
+        width 25%
+        align-items flex-start
         flex-flow column
+        min-height 316px
         margin-bottom 20px
         padding 0 10px
         @media screen and (max-width: 760px)
-            max-width 33.333333%
-            flex-basis 33.333333%        
+            max-width 33.333333%    
         @media screen and (max-width: 600px)
             max-width 50%
-            flex-basis 50%
         @media screen and (max-width: 400px)
             max-width 100%
-            flex-basis 100%
             padding 0
             
         
     &__image
-        display block
         width 100%
-        height auto
+        align-items flex-start
+        min-height 232px
             
                 
     &__title
