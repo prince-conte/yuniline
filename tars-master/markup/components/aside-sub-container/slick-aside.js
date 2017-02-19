@@ -41,10 +41,12 @@ if (desktopWidthSlick) {
                 
         if (pageTop >= critickScroll)
             {
-                $bannerSlickBox.css('margin-top' , '-100%')
+                $bannerSlickBox.css('top' , 'auto')
+                $bannerSlickBox.css('bottom' , heightFooter + 60)
 
             } else {
-                $bannerSlickBox.css('margin-top' , '0')
+                $bannerSlickBox.css('bottom' , 'auto')
+                $bannerSlickBox.css('top' , 20)
             }
         
 
