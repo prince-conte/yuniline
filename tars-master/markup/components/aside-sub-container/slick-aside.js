@@ -25,16 +25,29 @@ if (desktopWidthSlick) {
     
     $(window).scroll(function() {
         var pageTop = $(document).scrollTop();
-        var pageHeight = $(document).outerHeight();
+        var pageHeight = $(document).height();
+        var windowHeight = $(window).height();
         var heightFooter = $(".footer").outerHeight();
-        var critickScroll = pageHeight - heightFooter * 2;
+        var critickScroll = pageHeight - windowHeight - heightFooter / 2;
         
-        console.log(pageTop, pageHeight)
+        console.log(pageTop, windowHeight, critickScroll)
         
         if (pageTop >= bannerToTop)
             {
                 $bannerSlickBox.addClass('baner-box--fixed');
                 $bannerSlickBox.css('padding-top' , heightHeader + 20)
+                
+                        
+                
+        if (pageTop >= critickScroll)
+            {
+                $bannerSlickBox.css('margin-top' , '-100%')
+
+            } else {
+                $bannerSlickBox.css('margin-top' , '0')
+            }
+        
+
                 return false
 
             } 
@@ -43,16 +56,6 @@ if (desktopWidthSlick) {
                 $bannerSlickBox.removeClass('baner-box--fixed');
                 $bannerSlickBox.css('padding-top' , '0')
             }
-        
-        
-                
-        if (pageTop >= critickScroll)
-            {
-                $bannerSlickBox.removeClass('baner-box--fixed');
-                $bannerSlickBox.css('padding-top' , '0')
-                return false
-
-            } 
         
 
     });
