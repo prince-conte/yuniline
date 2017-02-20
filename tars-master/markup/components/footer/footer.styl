@@ -14,6 +14,7 @@
         margin-top 30px
         padding-top 35px
         border-top solid 1px #E6EAEA
+        min-height 1px
         &:first-child
             border-top solid 0px #E6EAEA
             margin-top 0
@@ -29,6 +30,7 @@
         min-height 250px
         max-height 250px
         flex-flow row
+        min-height 1px
         &:last-child
             padding-left 55px
             
@@ -55,6 +57,7 @@
     .item-25per
         max-width 25%
         flex-basis 25%
+        min-height 1px
         &:last-child
             padding-left 0px
             
@@ -72,15 +75,19 @@
             
             
     &__body
-        display inherit
+        display block
         max-width 100%
-        flex-basis 100%
         padding-right 10px
-        flex-flow column
+        
+        div,
+        a
+            &:not(:last-child)
+                margin-bottom 15px
         
     .subscribe-magazine
         max-width 60%
         flex-basis 60%
+        min-height 1px
         
     &_title
         font-size 20px
@@ -88,20 +95,37 @@
         text-align left
         line-height 22px
         margin-bottom 20px
+        min-height 1px
+        @media screen and (max-width: 1024px)
+            font-size 16px
+            line-height 20px
+            margin-top 0
 
             
     &_description
         font-size 16px
         line-height 20px
+        min-height 1px
+                
+        @media screen and (max-width: 1024px)
+            font-size 12px
+            line-height 16px
+            
+            
+
+        
+        
             
     &__magazine
         display block
         width 30%
         padding-left 10px
         align-content flex-start
+        min-height 1px
         img
             width 100%
             height auto
+            min-height 1px
             
             
             
@@ -111,6 +135,7 @@
         flex-flow row
         flex-wrap wrap
         margin-top 20px
+        min-height 1px
 
         
         &_input-email
@@ -121,18 +146,22 @@
             outline none
             display inline-block
             height 50px
+            min-height 1px
             
         &_send
             display inline-block
             margin 0px
             text-align left
+            min-height 1px
             .button
                 outline none
+                min-height 1px
                 
             input
                 visibility hidden
                 width 0px
                 height 0px
+                min-height 1px
                 
                 
                 
@@ -144,6 +173,7 @@
         justify-content left
         align-items start
         position relative
+        min-height 1px
         &:first-child
             @media screen and (min-width: 300px) and (max-width: 588px)
                 height 120px
@@ -160,6 +190,10 @@
             font-size 16px
             margin-right 25px
             font-family fontb
+            min-height 1px
+            @media screen and (max-width: 1440px)
+                font-size 14px
+                
             @media screen and (max-width: 1260px)
                 br 
                     display none
@@ -169,6 +203,7 @@
 
         a
             margin 0 7px
+            min-height 1px
             
             
         &_link
@@ -179,6 +214,7 @@
             display inline
             font-family fonttxt
             m-speed(.4s)
+            min-height 1px
             &:hover
                 color colfirm
         
@@ -213,14 +249,14 @@
             
             
     &__sub-menu
-        display flex
-        flex-flow column
         max-width 100%
         flex-basis 100%
+        min-height 1px
         
         &_item
             display block
             width 100%
+            min-height 1px
             
             a
                 display block
@@ -235,11 +271,10 @@
                     
                     
     &__copyright
-        display flex
+        display block
         width 100%
         padding 20px 0
-        align-content flex-start
-        flex-wrap wrap
+        min-height 1px
         
         p
             font-size 14px
@@ -248,6 +283,7 @@
             max-width 100%
             flex-basis 100%
             text-transform uppercase
+            min-height 1px
             
             .copy
                 display inline-block
@@ -271,9 +307,11 @@
             height 3px
             background colfirm
             bottom -8px
-            
+            @media screen and (max-width: 1024px)
+                bottom -14px
             
     .footer__contacts--socials
+        white-space nowrap
         @media screen and (min-width: 300px) and (max-width: 599px)
             min-height 90px
         

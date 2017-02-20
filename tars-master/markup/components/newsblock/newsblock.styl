@@ -1,7 +1,6 @@
 .news-block
     display flex
     flex-direction column
-    flex-basis 60%
     max-width 65%
     @media screen and (min-width: 300px) and (max-width: 1023px)
         display block
@@ -43,15 +42,20 @@
             
             .news-block__anons-article__image-box
                 flex-basis 25%
+                min-height 1px
                 padding 0
                 
             .news-block__anons-article__content
                 padding-left 10px
                 
             .news-block__anons-article_title
+                min-height 1px
                 font-size 18px
                 line-height 24px
-                
+                @media screen and (min-width: 300px) and (max-width: 1024px)
+                    font-size 16px
+                    line-height 22px
+
         &--conteregform-active
             border solid 1px colfirm
         
@@ -144,6 +148,7 @@
             width 100%
             padding-left 10px
             padding-right 10px
+            min-height 1px
             @media screen and (min-width: 300px) and (max-width: 599px)
                 display block
                 width 100%
