@@ -27,6 +27,9 @@
             max-width 100%
             flex-basis 55%
             padding 35px
+            @media screen and (max-width: 1440px)
+                padding 10px     
+            
             @media screen and (max-width: 760px)
                 flex-basis 100%
                 display block
@@ -68,6 +71,7 @@
             padding 10px 0
             border-bottom solid 1px #e6eaea
             text-align center
+
             
             
             &_adress
@@ -77,6 +81,10 @@
                 line-height 26px
                 padding 0 10px
                 margin-bottom 20px
+                
+                @media screen and (max-width: 1440px)
+                    font-size 18px
+                
                 span
                     font-family fonttxt
                     margin-left 15px
@@ -91,7 +99,7 @@
                 line-height 22px
                 padding 0 10px
                 margin-bottom 15px
-                @media screen and (max-width: 760px)
+                @media screen and (max-width: 1440px)
                     font-size 14px
                     margin-bottom 10px
                 span
