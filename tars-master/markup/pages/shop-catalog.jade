@@ -8,7 +8,7 @@ html(class="no-js", lang="ru")
     include ../components/all-container/all-container
     include ../components/footer/footer
     include ../components/mobile-menu/mobile-menu    
-    include ../components/shopcontainer/shopcontainer
+    include ../components/shop_catalog/shop_catalog
     
     include ../components/populararticleblock/populararticleblock
     include ../components/banner/banner
@@ -40,14 +40,19 @@ html(class="no-js", lang="ru")
                         span /
                                                                     
                     .paginator__item
-                        a(href="#") Каталог товаров
+                        a(href="#") Онлайн подписка
                                             
+                    .paginator__item
+                        span /
+                                                                    
+                    .paginator__item
+                        a(href="#") 1000 советов
                         
 
             .all-container
                 .content
                 
-                    +shopcontainer()
+                    +shop_catalog()
                         
  
 
@@ -70,6 +75,4 @@ html(class="no-js", lang="ru")
         script svg4everybody();
         //- Main scripts. You can replace it, but I recommend you to leave it here
         script(src='%=static=%js/separate-js/jquery.smoothscroll%=hash=%%=min=%.js'  defer)
-        
-
         

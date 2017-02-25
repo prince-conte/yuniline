@@ -6,6 +6,7 @@ $(document).ready(function() {
  
 conteReg();   
     
+shopSlider();
     
 centerSlider(); 
     

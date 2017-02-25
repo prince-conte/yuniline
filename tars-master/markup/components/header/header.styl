@@ -143,6 +143,7 @@
         
     &__in-shop
         width 220px
+        padding 10px
         background colfirm
         height inherit
         display inherit
@@ -156,12 +157,25 @@
             display none
             
         
-        span
+        span,
+        div
             color #fff
             font-family fontb
             font-size 14px
             display inline-block
             text-transform uppercase
+            .min
+                font-size 12px
+            
+        i
+            padding-right 20px
+            color #fff
+            font-weight 500
+            font-size 32px
+            @media screen and (max-width: 1400px)
+                font-size 28px
+                padding-right 10px
+            
             
 
     &__login
