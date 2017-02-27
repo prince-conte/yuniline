@@ -1,9 +1,18 @@
 .shopcontainer
-    padding 40px 0
-    min-height 500px
+    
+    min-height 100px
 				display block
 				max-width 100%
 				width 100%
+    padding-bottom 40px
+    
+    
+    &:first-child
+        padding 40px 0
+    
+				
+				&--min
+					width 65%
     
     
     &__tovar-box
@@ -50,6 +59,29 @@
         max-width 60%
         flex-basis 60%
         padding-left 40px
+        
+
+        .button
+            span
+                font-family fontb
+                padding 12px 20px 18px
+                font-size 16px
+                i
+                    position relative
+                    top 5px
+                    margin-left 10px
+                    font-size 24px
+                    
+                    
+
+        &__annotation
+            margin-top 60px
+
+
+        &__other-goods
+            margin-top 60px
+
+
         
         h2
             font-family fontblack
@@ -112,20 +144,7 @@
         padding 0 10px
         .category-news__active-category_title
             font-size 24px 
-            
-    .button
-        span
-            font-family fontb
-            font-size 20px
-            
-    &__annotation
-        margin-top 60px
-        
-        
-    &__other-goods
-        margin-top 60px
-        
-        
+
         
         h3
             font-size 18px
