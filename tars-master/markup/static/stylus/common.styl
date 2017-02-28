@@ -349,6 +349,9 @@ article
         @media screen and (max-width: 760px)
             flex-basis 100%
             
+        &--big
+            width 100%
+            
     
                     
         .doc
@@ -419,7 +422,8 @@ article
         
         
     input,
-    textarea
+    textarea,
+    .select2-selection
         border solid 1px #E6EAEA
         font-size 17px
         flex 0 0 auto
@@ -428,6 +432,16 @@ article
         resize none
         padding 10px 20px
         
+    .select2-selection,
+    .select2-container--default,
+    .select2-selection--single,
+    .select2-selection__arrow
+        border-radius 0
+        
+    .select2-selection
+        padding 0
+
+
     textarea
         height 150px
         
@@ -442,6 +456,16 @@ article
         width auto
         
         
+    .select2-selection,
+    .select2-container--default 
+        border-radius 0
+        
+    .select2-selection
+        padding 0
+        
+    .select2-selection--multiple
+        border solid 1px #E6EAEA !important
+            
     .obligatorily
         display inline-block
         position relative
@@ -454,6 +478,23 @@ article
             right -16px
             color colfirm
             font-size 28px
+            
+            
+    .select2-container--classic .select2-results__option--highlighted[aria-selected]
+        background #f4f7f6
+            
+    .select2-container--classic .select2-selection--multiple:focus
+        background #f4f7f6
+        
+    .select2-search__field
+        font-size 16px 
+        font-family fonttxt
+        
+    .select2-container--default
+        .select2-selection--multiple
+            .select2-selection__clear
+                margin-top 9px
+                color colfirm
 
     .form__submit
         display flex
@@ -493,7 +534,46 @@ article
                     display block
                     position relative
 
+.select2-dropdown
+    border solid 1px #E6EAEA !important
+    border-radius 0 !important
+    
+.select2-container--default 
+    .select2-results__option[aria-selected=true] 
+        background #f4f7f6 !important
+   
+.select2-container--default 
+    .select2-results__option--highlighted[aria-selected]
+        background #f4f7f6 !important
+        border-radius 0 !important
+        color coltxt !important
+        font-size 16px !important
+        padding-left 20px !important
+        
+.select2-results__option[aria-selected]
+        color coltxt!important
+        font-size 16px!important
+        padding-left 20px!important
+        
+.select2-container--default
+    .select2-selection--multiple
+        .select2-selection__choice
+            font-family fonttxt !important
+            font-size 16px 
+            color coltxt
+            background-color: #fff !important
+            border: 1px solid #E6EAEA !important
+            border-radius: 0px !important
+            cursor: default !important
+            float: left !important
+            margin-right: 5px !important
+            margin-top: 7px !important
+            padding: 0 10px !important
             
+        .select2-selection__choice__remove
+            margin-right 8px !important
+            color colfirm !important
+
             
 .form_file
     width 0px

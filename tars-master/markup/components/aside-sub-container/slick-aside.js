@@ -3,69 +3,73 @@
 
 
 function slickBanner() {
+    
+if ($(".baner-box").length) { 
 
-desktopWidthSlick = Modernizr.mq('(min-width: 1200px)');
+    desktopWidthSlick = Modernizr.mq('(min-width: 1200px)');
 
-$(window).load(function () {  
-    var $bannerSlickBox = $(".baner-box");
-    var widthBanner = $bannerSlickBox.width();
-    var heightHeader = $(".header").outerHeight();
-    var bannerCo = $bannerSlickBox.offset();
-    var bannerToTop = bannerCo.top;
-    $bannerSlickBox.css('width' , widthBanner)
-    $bannerSlickBox.css('max-width' , widthBanner)
-    
-    
-    
-   
-    
-    
-    
-if (desktopWidthSlick) {
-    
-    $(window).scroll(function() {
-        var pageTop = $(document).scrollTop();
-        var pageHeight = $(document).height();
-        var windowHeight = $(window).height();
-        var heightFooter = $(".footer").outerHeight();
-        var critickScroll = pageHeight - windowHeight - heightFooter / 2;
-        
-        console.log(pageTop, windowHeight, critickScroll)
-        
-        if (pageTop >= bannerToTop)
-            {
-                $bannerSlickBox.addClass('baner-box--fixed');
-                $bannerSlickBox.css('padding-top' , heightHeader + 20)
-                
-                        
-                
-        if (pageTop >= critickScroll)
-            {
-                $bannerSlickBox.css('top' , 'auto')
-                $bannerSlickBox.css('bottom' , heightFooter + 60)
+    $(window).load(function () {  
+        var $bannerSlickBox = $(".baner-box");
+        var widthBanner = $bannerSlickBox.width();
+        var heightHeader = $(".header").outerHeight();
+        var bannerCo = $bannerSlickBox.offset();
+        var bannerToTop = bannerCo.top;
+        $bannerSlickBox.css('width' , widthBanner)
+        $bannerSlickBox.css('max-width' , widthBanner)
 
-            } else {
-                $bannerSlickBox.css('bottom' , 'auto')
-                $bannerSlickBox.css('top' , 20)
-            }
-        
 
-                return false
 
-            } 
-        
-        else {
-                $bannerSlickBox.removeClass('baner-box--fixed');
-                $bannerSlickBox.css('padding-top' , '0')
-            }
-        
+
+
+
+
+    if (desktopWidthSlick) {
+
+        $(window).scroll(function() {
+            var pageTop = $(document).scrollTop();
+            var pageHeight = $(document).height();
+            var windowHeight = $(window).height();
+            var heightFooter = $(".footer").outerHeight();
+            var critickScroll = pageHeight - windowHeight - heightFooter / 2;
+
+            console.log(pageTop, windowHeight, critickScroll)
+
+            if (pageTop >= bannerToTop)
+                {
+                    $bannerSlickBox.addClass('baner-box--fixed');
+                    $bannerSlickBox.css('padding-top' , heightHeader + 20)
+
+
+
+            if (pageTop >= critickScroll)
+                {
+                    $bannerSlickBox.css('top' , 'auto')
+                    $bannerSlickBox.css('bottom' , heightFooter + 60)
+
+                } else {
+                    $bannerSlickBox.css('bottom' , 'auto')
+                    $bannerSlickBox.css('top' , 20)
+                }
+
+
+                    return false
+
+                } 
+
+            else {
+                    $bannerSlickBox.removeClass('baner-box--fixed');
+                    $bannerSlickBox.css('padding-top' , '0')
+                }
+
+
+        });
+
+
+    }
 
     });
 
-
 }
-
-});
 }
 
 

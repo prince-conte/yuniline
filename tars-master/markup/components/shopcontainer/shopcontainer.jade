@@ -105,14 +105,36 @@ mixin shopcontainer(data)
                     
                 .shopcontainer__card-in
                     .category-news
-                        .category-news__active-category 
-                            .category-news__active-category_title Итоговая стоимость подписки: <div class="active"> <span id="itog-price-element">0.00</span><i class="ruble-img-big"></i></div>
+                        .category-news__active-category_title Итоговая стоимость подписки: <div class="active"> <span id="itog-price-element">0.00</span><i class="ruble-img-big"></i></div>
                             
                     .button-block
-                        a.button
+                        a.button#shop-addres-open
                             span Оформить подписку
                                 i.icon-arrow-right-circle.icons
+                                
+                    .form.shop-addres#shop-addres
+                        .shop-addres__title Выберите адрес доставки:
+       
+                                                    
+                        .input-block.input-block--big
+                            select(class="js-shop-addres-select" multiple="multiple")
+                                option(value="AL") Смоленск
+                                option(value="WY") Саратов
+                                option(value="WY") Набережные челны
+                             
+                        .shop-addres__title Или введите новый адрес:
+       
+                        .input-block.input-block--big
+                            input(placeholder="Город / населенный пункт")
+       
+                        .input-block.input-block--big
+                            input(placeholder="Улица / дом / квартира")
                             
+                        .button-block
+                            button.button
+                                span Отправить в корзину 
+                                    i.icon-handbag.icons
+
                             
                 .shopcontainer__annotation
                 
