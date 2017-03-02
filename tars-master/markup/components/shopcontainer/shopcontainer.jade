@@ -64,14 +64,6 @@ mixin shopcontainer(data)
                 .category-news
                     .category-news__active-category 
                         .category-news__active-category_title Газета: <h1 class="active">1000 советов</h1>
-                ul.magazine-content__signs
-                    li.magazine-content__signs_item <b>Вид:</b> газета
-                    li.magazine-content__signs_item <b>Категория:</b> 16+
-                    li.magazine-content__signs_item <b>Формат:</b> А4
-                    li.magazine-content__signs_item <b>Периодичность:</b> 2 раза в месяц
-                    li.magazine-content__signs_item <b>Количество страниц:</b> 36-40
-                    li.magazine-content__signs_item <b>Вес,г:</b> 60
-                    li.magazine-content__signs_item <b>Цена:</b> <span id="price">57.80</span> <i class="ruble-img"></i>
                     
                 p.article-social-description Подписка на следующий месяц принимается до 9 числа 23:59 по мск. текущего месяца. Подписная кампания на первое полугодие стартует с 1 сентября, на второе полугодие с 1 апреля.
                 
@@ -114,6 +106,8 @@ mixin shopcontainer(data)
                                 
                     .form.shop-addres#shop-addres
                         .shop-addres__title Выберите адрес доставки:
+                        
+                         p.shop-addres__warning <b>Внимание!</b> Цена подписки формируется согласно региону доставки, при выборе адреса/ов другого региона, произойдет автоматический перерасчет итоговой стоимости подписки
        
                                                     
                         .input-block.input-block--big
@@ -130,15 +124,31 @@ mixin shopcontainer(data)
                         .input-block.input-block--big
                             input(placeholder="Улица / дом / квартира")
                             
+                        .shop-addres__itog Итоговая стоимость подписки: <div class="active"> <span>0.00</span><i class="ruble-img-big"></i></div>
+                            
                         .button-block
                             button.button
                                 span Отправить в корзину 
                                     i.icon-handbag.icons
+                                    
+                                    
+            
 
                             
                 .shopcontainer__annotation
                 
-                    h2 Аннотация
+                    h2 Об этом издании:
+                
+                    ul.magazine-content__signs
+                        li.magazine-content__signs_item <b>Вид:</b> газета
+                        li.magazine-content__signs_item <b>Категория:</b> 16+
+                        li.magazine-content__signs_item <b>Формат:</b> А4
+                        li.magazine-content__signs_item <b>Периодичность:</b> 2 раза в месяц
+                        li.magazine-content__signs_item <b>Количество страниц:</b> 36-40
+                        li.magazine-content__signs_item <b>Вес,г:</b> 60
+                        li.magazine-content__signs_item <b>Цена:</b> <span id="price">57.80</span> <i class="ruble-img"></i>
+                
+                    h3 Аннотация:
                     p «Маленькие академики» —  это детский развивающий журнал для подготовки к школе. Ребенок дошкольного возраста должен уметь решать простые логические задачки, головоломки и ребусы, группировать предметы по признакам, восстанавливать последовательность событий, читать простые предложения и понимать их, различать цвета, фигуры, стороны света и явления природы. 
                     p Журнал «Маленькие академики» поможет привить необходимые навыки для успешного развития ребенка. Задания по арифметике, чтению и письму, на логику и мышление, художественное творчество – все это ждет ребенка на страницах нашего издания. Журнал «Маленькие академики» разработан лучшими преподавателями школ раннего развития малышей. Уверены, с помощью нашего развивающего журнала родителям будет легче понять, что нравится ребенку и какие его таланты наиболее перспективны. Возможно, вы сумеете точно выбрать дополнительное образование. или подходя
             

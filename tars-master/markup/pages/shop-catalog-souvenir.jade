@@ -1,0 +1,111 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head
+    include ../components/header/header
+    include ../components/nav/nav
+    include ../components/all-container/all-container
+    include ../components/footer/footer
+    include ../components/mobile-menu/mobile-menu    
+    
+    include ../components/departments/departments
+    include ../components/aside-sub-container/aside-sub-container
+    include ../components/populararticleblock/populararticleblock
+    include ../components/banner/banner
+    include ../components/shop_catalog_souvenir/shop_catalog_souvenir
+
+    
+    
+    
+    //include ../components/footer/footer 
+
+    
+    
+
+    head
+        +head(head.news)
+    body.page
+        |%=symbols=%
+
+        +header()
+        .page__wrapper
+            +nav()
+            .paginator
+                .content
+                    
+                    .paginator__item
+                        a(href="#") Главная
+                                            
+                    .paginator__item
+                        span /
+                                                                    
+                    .paginator__item
+                        a(href="#") Магазин
+                                                                  
+                    .paginator__item
+                        span /
+                                                                    
+                    .paginator__item
+                        a(href="#") Сувенирная продукция
+                        
+            .all-container
+                .content
+                    .shopcontainer
+                    
+
+                        .promo
+                            .promo__slider
+
+                                .center-slider#center
+                                    .promo__shop-slider
+                                        a.sl
+                                            img(src="static/img/general/slide3.jpg")
+                                            .center-slider__info 
+                                                h6.center-slider__info_title Благотворительная акция «Дерево добра»
+                                        a.sl
+                                            img(src="static/img/general/slide2.jpg")
+                                            .center-slider__info 
+                                                h6.center-slider__info_title Благотворительная акция «Дерево добра»
+                                        a.sl
+                                            img(src="static/img/general/slide1.jpg")
+                                            .center-slider__info 
+                                                h6.center-slider__info_title Благотворительная акция «Дерево добра»
+                            .promo__bar
+                                a.promo__bar-block(href="#" style="background:url(static/img/general/pazl.jpg)")
+                                    .promo__bar-block-hover
+                                    h6.center-slider__info Сувенирная <br> продукция
+                                    .promo__bar-block-reed-more Перейти к каталогу <i class="icon-arrow-right-circle icons"></i>
+
+                                a.promo__bar-block(href="#" style="background:url(static/img/general/pazl.jpg)")
+                                    .promo__bar-block-hover
+                                    h6.center-slider__info Прошлые <br> номера
+                                    .promo__bar-block-reed-more Перейти к каталогу <i class="icon-arrow-right-circle icons"></i>
+
+
+                    
+                    +shop_catalog_souvenir()
+                    .aside-sub-container.aside-sub-container--shop
+                        +banner()
+                        .baner-box
+                            +banner()
+
+            +footer()
+        +mobile-menu()
+            
+            //+header()
+            
+
+            //- Include your components here
+            //- +example()
+
+            //+footer()
+        link(rel="stylesheet" href="static/css/separate-css/social-share-kit.css")    
+        script(src='%=static=%js/main%=hash=%%=min=%.js')
+        script(src='%=static=%js/separate-js/index%=hash=%%=min=%.js')
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/separate-js/jquery.smoothscroll%=hash=%%=min=%.js'  defer)
+        
+
+        
