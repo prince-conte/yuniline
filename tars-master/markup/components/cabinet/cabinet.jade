@@ -1,0 +1,63 @@
+mixin cabinet(data)
+
+
+    .news-block.cabinet
+
+        form.form
+        
+            h2.form-title Личная информация
+
+            .input-block
+                label
+                    span.obligatorily Имя
+                input(type="text" value="Александр" disabled required)
+          
+            .input-block
+                label
+                    span.obligatorily Фамилия
+                input(type="text" value="Козлов" disabled required)
+                
+            .input-block
+                label
+                    span Отчество
+                input(type="text" value="Викторович" disabled)
+       
+       
+        
+          
+            .input-block
+                label
+                    span.obligatorily E-mail / Логин
+                input(type="text" value="prince-conte@outlook.com" disabled required)
+                     
+
+            .button-block
+                .button#form-submit-button
+                    span Редактировать
+                input.form_file#form-submit-input(type="submit")
+                
+        
+        
+        form.form
+        
+            h2.form-title Сменить пароль
+ 
+            .input-block
+                label
+                    span.obligatorily Нынешний пароль
+                input(type="text" required)
+                             
+            .input-block
+                label
+                    span.obligatorily Новый пароль
+                input(type="text" required)
+                
+                
+            .button-block
+                .button#form-submit-button
+                    span Сменить пароль
+                input.form_file#form-submit-input(type="submit")
+                
+                
+                     
+    
