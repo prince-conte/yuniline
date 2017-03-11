@@ -26,23 +26,26 @@ $("#footer_smb").click(function() {
     $("#footer_smb_inp").trigger('click');
 });
     
+     
+$("#form-file-button").click(function() {
     
-   
-$("#form-check-subs").click(function() {
+    $("#form-file-input").trigger('click');
+});
+
+
+$("#registration_feedback #form-check-subs").click(function() {
     
     if (checkBoxSubs == 0)
         
     {    
-        $("#form-input-subs").trigger('click');
-        $("#check-box-subs").addClass('active');
+        $("#registration_feedback #check-box-subs").addClass('active');
+        $("#registration_feedback #form-input-subs").val('1');
         checkBoxSubs = 1;
     }
-    
-    else
-            
+    else          
     {    
-        $("#form-input-subs").trigger('click');
-        $("#check-box-subs").removeClass('active');
+        $("#registration_feedback #check-box-subs").removeClass('active');
+        $("#registration_feedback #form-input-subs").val('');
         checkBoxSubs = 0;
     }
     
@@ -51,39 +54,32 @@ $("#form-check-subs").click(function() {
     
      
    
-$("#form-check-sec").click(function() {
+$("#registration_feedback #form-check-sec").click(function() {
     
-    if (checkBoxSec == 0)
-        
-        
+    if (checkBoxSec == 0)       
     {    
-        $("#form-input-sec").trigger('click');
-        $("#check-box-sec").addClass('active');
+        $("#registration_feedback #check-box-sec").addClass('active');
+        $("#registration_feedback #form-input-sec").val('1');
         checkBoxSec = 1;
     }
     
     else
             
     {    
-        $("#form-input-sec").trigger('click');
-        $("#check-box-sec").removeClass('active');
+        $("#registration_feedback #check-box-sec").removeClass('active');
+        $("#registration_feedback #form-input-sec").val('');
         checkBoxSec = 0;
     }
-    
-    
 });
-    
-     
-$("#form-file-button").click(function() {
-    
-    $("#form-file-input").trigger('click');
-});
-    
-     
+
+//обработчик форм в лк
 $("#form-submit-button").click(function() {
     $("#form-submit-input").trigger('click');
 });
-    
+
+$("#form-submit-button_pass").click(function() {
+    $("#form-submit-input_pass").trigger('click');
+}); 
          
 $("#form-submit-mobile-button").click(function() {
     $("#form-submit-mobile-input").trigger('click');
