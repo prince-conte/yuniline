@@ -1,0 +1,24 @@
+include /category/category
+mixin formregion(data)
+
+    .news-block 
+
+        form.form
+
+            .input-block.input-block--big
+                label
+                    span  Выберите домашний регион: 
+                select(class="js-example-basic-single")
+                    option(value="AL") Европа
+                    option(value="AL") Беларусь
+                    option(value="AL") Казахстан
+                    option(value="AR") Москва
+                    option(value="AR") Смоленск
+
+
+            .button-block
+                .button#form-submit-button
+                    span Сохранить
+                input.form_file#form-submit-input(type="submit")
+
+                

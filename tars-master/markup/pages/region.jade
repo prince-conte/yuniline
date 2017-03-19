@@ -9,14 +9,11 @@ html(class="no-js", lang="ru")
     include ../components/footer/footer
     include ../components/mobile-menu/mobile-menu    
     
-    include ../components/newsblock/newsblock
+    include ../components/formregion/formregion
     include ../components/aside-sub-container/aside-sub-container
-    include ../components/statickinfo/statickinfo
-    include ../components/basket/basket
-    include ../components/cabinetmenu/cabinetmenu
-    include ../components/magazinecontacts/magazinecontacts
-    include ../components/basketorder/basketorder
-    include ../components/delivery/delivery
+    include ../components/populararticleblock/populararticleblock
+    include ../components/banner/banner
+
     
     
     
@@ -31,41 +28,40 @@ html(class="no-js", lang="ru")
         |%=symbols=%
 
         +header()
-        
         .page__wrapper
             +nav()
-
-
             .paginator
                 .content
                     
                     .paginator__item
                         a(href="#") Главная
-                                            
+                                                                  
                     .paginator__item
                         span /
                                                                     
                     .paginator__item
-                        a(href="#") Магазин
-                                                                   
-                    .paginator__item
-                        span /
-                                                                    
-                    .paginator__item
-                        a(href="#") Корзина
-                                                                                 
-   
+                        a(href="#") Выбор региона
+                        
             .all-container
                 .content
-                    +basket()
-                
+                    +formregion()
+                    .aside-sub-container          
+                        .banner
+                            .banner_title 1000 советов, успей подписаться на любимое издание!
+                            img(src="static/img/general/jornal.png")
+                            .button-block
+                                a.button
+                                    span подписаться
 
-                    .aside-sub-container.aside-sub-container--cabinet
-                        +delivery()
-                        +basketorder()
-                        +cabinetmenu()
-                        
- 
+
+
+                        .jobspost__leftinfo
+                            .jobspost__leftinfo_title Ищете вакансию или хотите к нам на стажировку?
+                            .jobspost__leftinfo_description Пришлите нам свое резюме, мы с вами свяжемся при появлении подходящих вакансий
+                            .button-block
+                                a.button 
+                                    span Отправить резюме
+
 
             +footer()
         +mobile-menu()
@@ -77,15 +73,12 @@ html(class="no-js", lang="ru")
             //- +example()
 
             //+footer()
+        link(rel="stylesheet" href="static/css/separate-css/social-share-kit.css")    
         link(rel="stylesheet" href="static/css/separate-css/select2.css")
         script(src='%=static=%js/main%=hash=%%=min=%.js')
-        script(type="text/javascript" src="https://maps.googleapis.com/maps/api/js")
         script(src='%=static=%js/separate-js/index%=hash=%%=min=%.js')
-        script(src='%=static=%js/separate-js/mapoptions%=hash=%%=min=%.js')
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
         script svg4everybody();
         //- Main scripts. You can replace it, but I recommend you to leave it here
         script(src='%=static=%js/separate-js/jquery.smoothscroll%=hash=%%=min=%.js'  defer)
-        
-
         
