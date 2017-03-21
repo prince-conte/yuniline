@@ -28,9 +28,9 @@ mixin cabinet(data)
                     span Дата рождения
                 input(type="text" id="date" placeholder="99/99/9999" disabled)
                               
-            .input-block
+            .input-block.input-block--big
                 label
-                    span Телефон (для подтверждения заказов)
+                    span Телефон
                 input(type="text" id="phone" placeholder="(999) 999-9999" disabled)
        
        
@@ -40,6 +40,16 @@ mixin cabinet(data)
                 label
                     span.obligatorily E-mail / Логин
                 input(type="text" value="prince-conte@outlook.com" disabled required)
+                
+            .input-block
+                label
+                    span  Выберите домашний регион: 
+                select(class="js-example-basic-single"  disabled)
+                    option(value="AL") Европа
+                    option(value="AL") Беларусь
+                    option(value="AL") Казахстан
+                    option(value="AR") Москва
+                    option(value="AR") Смоленск
                      
 
             .button-block
