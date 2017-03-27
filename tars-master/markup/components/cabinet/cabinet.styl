@@ -3,6 +3,70 @@
     width 100%
     
     
+    
+    &__history
+        margin-top 45px
+        padding-left 10px
+        
+    &__history-grid
+        transition .2s
+        display flex
+        border-bottom solid 1px #e6eaea
+        color coltxt
+        
+        @media screen and (max-width: 1000px)
+            flex-wrap wrap
+            margin-bottom 25px
+        
+        &:hover
+            border-bottom solid 1px colfirm
+            
+            
+        b
+            font-family fontb
+            margin-right 1rem
+            
+        span
+            color colfirm
+            font-family fontb
+    
+            
+            
+    &__history-item
+        font-size 15px
+        padding 10px 0
+        
+        @media screen and (max-width: 1000px)
+            font-size 12px
+            padding 5px 0
+            
+            
+        &:first-child
+            font-family fontb
+            @media screen and (max-width: 1000px)
+                font-size 14px
+                width 100%
+                        
+        &:last-child
+            @media screen and (max-width: 1000px)
+                font-size 14px
+                width 100%
+            
+                
+                
+                
+        &:not(:last-child)
+            margin-right 2rem
+            padding-right 2rem
+            border-right solid 1px #e6eaea
+            
+            @media screen and (max-width: 1000px)
+                border-right solid 0px
+        
+            
+    
+    
+    
     .form
         &:first-child
             margin-top 0
@@ -11,4 +75,7 @@
     .shop-addres
         display block
         border 0
+        
+        
+    
         

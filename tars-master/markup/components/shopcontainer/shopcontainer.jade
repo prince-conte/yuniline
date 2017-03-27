@@ -67,6 +67,14 @@ mixin shopcontainer(data)
                     
                 p.article-social-description Подписка на следующий месяц принимается до 9 числа 23:59 по мск. текущего месяца. Подписная кампания на первое полугодие стартует с 1 сентября, на второе полугодие с 1 апреля.
                 
+                h2 Выберите количество:
+                
+                .number-block
+                    span.minus -
+                    input(type="text" value="1" size="5")
+                    span.plus +
+                
+                
                 h2 Выберите период подписки:
                 
                 .shopcontainer__subscribe-grid#js-subscribe
@@ -111,7 +119,7 @@ mixin shopcontainer(data)
        
                                                     
                         .input-block.input-block--big
-                            select(class="js-shop-addres-select" multiple="multiple")
+                            select(class="js-shop-addres-select js-example-basic-single" multiple="multiple")
                                 option(value="AL") Смоленск
                                 option(value="WY") Саратов
                                 option(value="WY") Набережные челны

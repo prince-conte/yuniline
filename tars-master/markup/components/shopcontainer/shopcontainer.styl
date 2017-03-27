@@ -16,11 +16,17 @@
     
     
     &__tovar-box
-        display flex
+        display block
+        
+        @media screen and (min-width: 1000px)
+            display flex
         
         
     &__slider
         width 40%
+        
+        @media screen and (max-width: 1000px)
+            width 100%
        
         
         .tovar-slider
@@ -81,13 +87,24 @@
 
     &__other-goods
         margin-top 60px
+        
+        @media screen and (max-width: 1000px)
+            display none
+        
 
            
                
     &__tovar-card
-        max-width 60%
-        flex-basis 60%
+        width 60%
         padding-left 40px
+        
+        @media screen and (max-width: 1000px)
+            margin-top 45px
+            width 100%
+            padding-left 0
+            
+        
+        
         
 
         .button
@@ -95,11 +112,20 @@
                 font-family fontb
                 padding 12px 20px 18px
                 font-size 16px
+                
+                @media screen and (max-width: 1000px)
+                    padding 8px 16px 14px
+                    font-size 14px
                 i
                     position relative
                     top 2px
                     margin-left 10px
                     font-size 18px
+                    @media screen and (max-width: 1000px)
+                        font-size 14px
+                        margin-left 6px
+                    
+                        
                     
 
         
@@ -133,7 +159,7 @@
         m-speed(.4s)
         font-size 14px
         text-transform uppercase
-        margin-top 15px
+        margin-bottom 15px
         margin-right 15px
         background #72d546
         color #fff
@@ -167,6 +193,9 @@
         padding 0 10px
         .category-news__active-category_title
             font-size 24px 
+            
+            @media screen and (max-width: 1000px)
+                font-size 18px 
 
         
         h3
