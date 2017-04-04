@@ -1,0 +1,116 @@
+.popup-fade
+    position: fixed
+    display none
+    top: 0
+    left: 0
+    width: 100%
+    height 100%
+    background coltxt
+    opacity .8
+    z-index 999999999999
+    
+    
+    
+.full-popup
+    position absolute
+    display none
+    top 50%
+    left 50%
+    width 400px
+    height auto
+    transform translate(-50%, -80%)
+    background #f4f7f6
+    min-height 200px
+    border-radius 5px
+    z-index 9999999999999
+    padding 20px
+    border 2px solid colfirm
+    
+    @media screen and (max-width: 760px)
+        top 55px
+        width 90%
+        transform translate(-50%, 0%)
+    
+    .button-block
+        display flex
+        justify-content center    
+        
+        @media screen and (max-width: 760px)
+            flex-wrap wrap
+            
+
+        
+        .button
+            align-self center
+        
+            @media screen and (min-width: 761px)
+                &:not(:last-child)
+                    margin-right 10px
+            
+            @media screen and (max-width: 760px)
+                &:not(:last-child)
+                    margin-bottom 10px
+    
+    
+    &__title
+        font-family fontb
+        font-size 20px
+        line-height 24px
+        margin-bottom 20px
+        text-align center
+        color colfirm
+        
+        
+    &__close
+        position absolute
+        display block
+        width 32px
+        height 32px     
+        top -45px
+        right -45px
+        background #f4f7f6
+        border-radius 50%
+        border 2px solid colfirm
+        
+        @media screen and (max-width: 760px)
+            right 0
+        
+        &:hover
+            background colfirm
+            
+            span
+                background #f4f7f6
+                    
+            span:before
+                background #f4f7f6
+        
+        span
+            position absolute
+            width 20px
+            height 2px
+            background colfirm
+            border-radius 2px
+            top 13px
+            left 4px
+            transform rotate(134deg)
+            content ''
+            
+            &:before
+                position absolute
+                width 100%
+                height 100%
+                background colfirm
+                border-radius 2px
+                top 0px
+                left 0px
+                transform rotate(270deg)
+                content ''
+            
+            
+            
+        
+    
+        
+    
+    
+
