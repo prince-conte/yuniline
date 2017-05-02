@@ -35,6 +35,10 @@
     &__history-item
         font-size 15px
         padding 10px 0
+        white-space nowrap
+        
+        @media screen and (min-width: 1000px)
+          text-align center
         
         @media screen and (max-width: 1000px)
             font-size 12px
@@ -43,28 +47,53 @@
             
         &:first-child
             font-family fontb
-            @media screen and (max-width: 1000px)
-                font-size 14px
-                width 100%
-                        
-        &:last-child
-            @media screen and (max-width: 1000px)
-                font-size 14px
-                width 100%
+            @media screen and (min-width: 1000px)
+              max-width 145px
+              width 30%
             
-                
+            @media screen and (max-width: 1000px)
+                font-size 14px
+                width 100%
+
+        &:nth-child(2),
+        &:nth-child(3)
+            @media screen and (min-width: 1000px)
+              max-width 170px
+              width 20%
+                     
                 
                 
         &:not(:last-child)
-            margin-right 2rem
-            padding-right 2rem
+            padding-right 1rem
+            border-right solid 1px #e6eaea
+            
+            @media screen and (max-width: 1000px)
+                border-right solid 0px
+                        
+        &:not(:first-child)
+            padding-right 1rem
+            padding-left 1rem
             border-right solid 1px #e6eaea
             
             @media screen and (max-width: 1000px)
                 border-right solid 0px
         
+                        
+        &:last-child
+          border-right 0
+          
+
+          @media screen and (min-width: 1000px)
+            flex 1
+            width 100%
+
+
+          @media screen and (max-width: 1000px)
+              font-size 14px
+              width 100%
+
             
-    
+            
     
     
     .form
